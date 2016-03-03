@@ -1,0 +1,13 @@
+{
+  "name": "Arylex",
+  "version": "1.0.0",
+  "dependencies": {
+    "gulp": "*",
+    "gulp-sass": "*",
+    "browser-sync": "*"
+  },
+  "devDependencies": {
+    "gulp-nunjucks": "^2.2.0",
+    "gulp-nunjucks-render": "^2.0.0"
+  }
+}

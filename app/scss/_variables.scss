@@ -1,0 +1,26 @@
+$color-arylex: #bb650e;
+$color-arylex-light: #c07020;
+
+$grid-gutter-width: 10px;
+$text-color:    #414141;
+
+$link-color:    $color-arylex;
+$link-hover-color:  darken($link-color, 5%);
+
+$font-family-sans-serif:  'Roboto', Helvetica, Arial, sans-serif;
+$font-size-base:          15px;
+
+$font-size-h1:            floor(($font-size-base * 2.6)) !default; // ~36px
+$font-size-h2:            42px; // ~30px
+$font-size-h3:            38px; // ~24px
+$font-size-h4:            30px; // ~18px
+$font-size-h5:            $font-size-base !default;
+$font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$headings-font-family: 'Roboto';
+$headings-font-weight: 300;
+$headings-line-height: 1.1;
+$headings-color: $color-arylex;
+
+
+$icon-font-path: '../fonts/';

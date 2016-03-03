@@ -1,0 +1,12 @@
+
+@mixin no-gutter() {
+  &{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  & > [class*='col-']:not(:first-child),
+  & > [class*='col-']:not(:last-child) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
