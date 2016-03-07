@@ -23,14 +23,53 @@
 
     <article class="container">
         <div class="row">
-            <div class="col-md-4">
-                <h2>Contact</h2>
-                <p>Arylex is currently undergoing trial as an active ingredient in a number of herbicides across Europe. Having recently received its first commercial registration in Denmark we are looking forward to the announcement of more Arylex based products in the coming months.</p>
-                <p>All details of new Arylex products will be found here.</p>
-                <p><img src="./img/logo-grey.png" class="img-responsive"></p>
+            <div class="col-md-6">
+
+                <form method="POST" action="" class="form-type" data-validate="true">
+                    <legend>Contact us</legend>
+                    <div>
+                        <label for="contact-name" class="required">Name</label>
+                        <input type="text" name="name" id="contact-name" data-validation="not-empty" data-error-msg="Enter name">
+                    </div>
+                    <div>
+                        <label for="contact-email" class="required">Email Address</label>
+                        <input type="email" name="email" id="contact-email" data-validation="email" data-error-msg="Email is not valid">
+                    </div>
+                    <div>
+                        <label for="contact-email-repeat" class="required">Confirm email</label>
+                        <input type="email" name="email-check" id="contact-email-repeat" data-validation="repeat" data-repeat-field="#contact-email" data-error-msg="Email does not match">
+                    </div>
+                    <div>
+                        <label for="contact-telephone">Telephone</label>
+                        <input type="text" name="telephone" id="contact-telephone">
+                    </div>
+                    <p class="hint-required">* Required</p>
+                    <legend>Please choose a subject and write your question</legend>
+                    <div>
+                        <select id="subjet" class="selectpicker" name="subjet" data-validation="select" data-error-msg="Choose a subject">
+                            <option value="">Choose one of this options</option>
+                            <option value="Opción 1">Opción 1</option>
+                            <option value="Opción 2">Opción 2</option>
+                            <option value="Opción 3">Opción 3</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="contact-question">Question</label>
+                        <textarea id="contact-question" name="question"></textarea>
+                    </div>
+                    <div class="legal">
+                        <input type="checkbox" name="bbll" id="contact-legal-check" data-validation="checkbox" data-error-msg="Must accept legal terms">
+                        <label for="contact-legal-check">Accept legal terms</label>
+                    </div>
+                    <input type="hidden" name="language" value="en">
+                    <input type="submit" value="SEND QUESTION">
+                    <div class="errors"></div>
+                </form>
+
             </div>
-            <div class="col-md-6 col-md-offset-1">
-                <img src="./img/graphic-products-1.jpg" class="img-responsive center-block">
+            <div class="col-md-3 col-md-offset-2 dow-buttons">
+                <a href="#" class="button">DOW GERMANY</a>
+                <a href="#" class="button">DOW FRANCE</a>
             </div>
         </div>
     </article>

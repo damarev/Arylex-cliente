@@ -24,19 +24,21 @@
     <article class="container">
         <div class="row">
             <div class="col-md-4">
-                <div class="nav-faqs">
+                <div class="mod-categories">
                     <h3>TOPICS</h3>
                     <ul>
-                        <li>PRODUCTS</li>
-                        <li>SEEDS</li>
-                        <li>PROGRAMS</li>
-                        <li>WINTER</li>
-                        <li>SUMMER</li>
-                        <li>CONTROL</li>
+                        <li><a href="#">PRODUCTS</a></li>
+                        <li><a href="#">SEEDS</a></li>
+                        <li><a href="#">PROGRAMS</a></li>
+                        <li><a href="#">WINTER</a></li>
+                        <li><a href="#">SUMMER</a></li>
+                        <li><a href="#">CONTROL</a></li>
                     </ul>
                 </div>
-                <div class="ask-">
-
+                <div class="mod-register ask-the-experts">
+                    <h3>ASK THE EXPERTS</h3>
+                    <p>If you don’t find answers to your question here ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                    <a href="#" class="submit">SEND QUESTION</a>
                 </div>
             </div>
             <div class="col-md-8 faqs">

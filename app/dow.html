@@ -6,14 +6,14 @@
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <title>Dow AgroSciences - Arylex</title>
 
-    <link rel="shortcut icon" href="img/favicon.png"/>
-    <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.9.4/css/bootstrap-select.min.css"-->
-    <link media="all" type="text/css" rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 
     <script src="js/jquery-2.2.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
-    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.9.4/js/bootstrap-select.min.js"></script-->
+    <script src="js/bootstrap-select.min.js"></script>
 
     <script src="js/main.js"></script>
 
@@ -29,7 +29,7 @@
             <div class="container">
 
                 <div class="logo_top">
-                    <h1><a href="#">Arylex Active</a></h1>
+                    <h1><a href="index.html">Arylex Active</a></h1>
                 </div>
 
                 <nav class="menu_top" role="navigation">
@@ -40,9 +40,10 @@
                     </ul>
                 </nav>
 
-                <form role="search" method="get" action="" class="search-form">
-                    <input type="text" class="search-field" placeholder="Search"></input>
+                <form role="search" method="get" action="search.html" class="search-form">
+                    <input type="search" name="q" class="search-field" placeholder="Search" title="Search for:">
                     <button type="submit" class="search-submit"><span class="screen-reader-text">Search</span></button>
+                    <input type="hidden" name="lang" value="en">
                 </form>
 
                 <nav class="nav-main">
@@ -64,7 +65,7 @@
 		
 
 
-<header class="header-img" style="background-image:url('img/header-1.jpg');">
+<header class="header-img" style="background-image:url('img/header-2.jpg');">
     <span class="furrows"></span>
     <div class="highlight">
         <div class="container">
@@ -143,18 +144,19 @@
                     <div class="col-sm-8">
                         <nav class="nav-footer">
                             <ul>
-                                <li><a href="#">Arylex Active</a></li>
-                                <li><a href="#">Dow AgroSciences</a></li>
-                                <li><a href="#">News &amp; Views</a></li>
-                                <li><a href="#">Products</a></li>
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="index.html">Arylex Active</a></li>
+                                <li><a href="dow.html">Dow AgroSciences</a></li>
+                                <li><a href="news.html">News &amp; Views</a></li>
+                                <li><a href="products.html">Products</a></li>
+                                <li><a href="faqs.html">FAQ</a></li>
+                                <li><a href="contact.html">Contact</a></li>
                             </ul>
                         </nav>
 
-                        <form role="search" method="get" action="" class="search-form">
-                            <input type="text" class="search-field" placeholder="Search"></input>
+                        <form role="search" method="get" action="search.html" class="search-form">
+                            <input type="search" name="q" class="search-field" placeholder="Search" title="Search for:">
                             <button type="submit" class="search-submit"><span class="screen-reader-text">Search</span></button>
+                            <input type="hidden" name="lang" value="en">
                         </form>
 
                     </div>

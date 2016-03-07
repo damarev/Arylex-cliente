@@ -1,0 +1,105 @@
+{% set title = 'News & Views' %}
+{% set navActive = 3 %}
+{% extends "layout.nunjucks" %}
+{% block content %}
+
+
+<header class="header-img" style="background-image:url('img/header-3.jpg');">
+    <span class="furrows"></span>
+    <div class="header-title">
+        <h2>News &amp; Views</h2>
+    </div>
+</header>
+
+
+<main id="main" role="main" class="news">
+
+    <article class="news-detail">
+
+        <img src="img/news-featured-2.jpg" class="img-responsive center-block">
+
+        <div class="row">
+            <div class="col-md-8">
+
+                <div class="meta-author meta-expert">
+                    <img src="img/expert.png">
+                    <span class="author-title">Author</span>
+                    <span class="author-name">Josh McHinley</span>
+                    <span class="author-description">Pesticide program manager for the San Joaquin County Agricultural Commissioner’s Office</span>
+                </div>
+
+                <div class="meta-date">JANUARY 23</div>
+
+                <div class="page-content">
+                    <h3>Don’t Fear the Science</h3>
+
+                    <p>This week we interview sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                    <h4>Tell us a bit about yourself and your work</h4>
+
+                    <p>My husband and I have been farming together since 1980. We grow both conventional and biotech [GMO] corn, soybeans and wheat on more than 2,000 acres and are very focused on sustainable farming. When we started farming, we took the phrase “Our soil, our strength” on as our motto. We are extremely committed to the health and quality of our soil and have evolved our agronomic approach over time to ensure we are always contributing to soil quality with every decision we make.</p>
+
+                    <img src="img/news-content-2.jpg" class="img-responsive">
+
+                    <p class="img-caption">How has this focus on the soil your farming practices?</p>
+
+                    <p>If we don’t take care of our soil, we are not going to make it. So every decision we make is examined through that lens. For example, we think carefully about everything we put on our fields, including machinery. All of our vehicles have rubber belts instead of tires to lessen the impact of driving in the fields.</p>
+
+                    <h4>How do you respond to people who think that biotech crops are harmful?</h4>
+
+                    <p>I tell people, “Don’t fear the science.” We aren’t putting anything foreign into the seed — there is nothing that is not fit for humans. It is just simply a technology. But because people fear the technology, new technologies are slower to come to market. That’s a shame because technologies have really changed the game for farmers.<br>Many people assume that organic farming results in healthier crops. But often, organic farming requires the use of heavy metals and chemicals that are much harsher. As farmers, nothing is more important to us than growing healthy crops. And biotech crops allow us to do that.<br>You mentioned that you grow both conventional and biotech crops. Why both?<br>Conventional crops take a lot more intervention and management. We are spraying conventional soybean plants two and three times versus once for the biotech soybeans. As a result they cost more — and people do pay more for them.</p>
+
+                </div>
+
+                <div class="meta-category"><a href="#">EXPERT OPINIONS</a> • <a href="#">INTERVIEWS</a></div>
+
+                <div class="meta-share">
+                    SHARE
+                    <ul>
+                        <li><a href="#" class="share-twitter">Share Twitter</a></li>
+                        <li><a href="#" class="share-facebook">Share Facebook</a></li>
+                        <li><a href="#" class="share-email">Share email</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="related-articles">
+                    <h3>RELATED ARTICLES</h3>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="news-item-related" style="background-image: url('img/news-2.jpg');">
+                                <div class="gradient">
+                                    <div class="content">
+                                        <p class="category"><a href="#">CEREALS</a></p>
+                                        <h4><a href="#">Prevent volunteer beans making gappy crops</a></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="news-item-related" style="background-image: url('img/news-3.jpg');">
+                                <div class="gradient">
+                                    <div class="content">
+                                        <p class="category"><a href="#">CROPS</a></p>
+                                        <h4><a href="#">Aim for best practice against blackgrass, despite late harvest</a></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+
+                {% include 'aside-news-categories.nunjucks' %}
+                {% include 'aside-news-bulletin.nunjucks' %}
+
+            </div>
+        </div>
+    </article>
+
+</main>
+
+
+{% endblock %}

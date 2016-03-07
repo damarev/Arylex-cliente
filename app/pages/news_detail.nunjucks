@@ -1,0 +1,85 @@
+{% set title = 'News & Views' %}
+{% set navActive = 3 %}
+{% extends "layout.nunjucks" %}
+{% block content %}
+
+
+<header class="header-img" style="background-image:url('img/header-3.jpg');">
+    <span class="furrows"></span>
+    <div class="header-title">
+        <h2>News &amp; Views</h2>
+    </div>
+</header>
+
+
+<main id="main" role="main" class="news">
+
+    <article class="news-detail">
+
+        <img src="img/news-featured-1.jpg" class="img-responsive center-block">
+
+        <div class="row">
+            <div class="col-md-8">
+
+                <div class="meta-date">JANUARY 23</div>
+
+                <div class="page-content">
+                    <h3>Grandfather rights and grassland sprays</h3>
+
+                    <p>After 26th November 2015, all sprayer operators applying professional use pesticides will need to have a Specified Certificate, previously known as a Certificate of Competence.<br>If you previously sprayed under the ‘grandfather rights’ exemption, then you need to:</p>
+
+                    <ul>
+                        <li>Take the Level 2 award in the safe use of pesticides replacing grandfather rights</li>
+                        <li>Or take the existing Level 2 safe use of pesticides (PA) certificate.</li>
+                    </ul>
+
+                    <p>Options if you don’t take the qualifications:</p>
+
+                    <ul>
+                        <li>You could hand over the spraying to perhaps a family member or employee who has got the correct qualifications.</li>
+                        <li>Or you could use a qualified spray contractor.</li>
+                    </ul>
+
+                    <br>
+
+                    <h4>Frequently asked questions</h4>
+
+                    <p><strong>Do I need to be certified to purchase plant protection products after 26th November 2015?</strong><br>
+                        You do not need to be certified to purchase professional plant protection products, but if you are going to be applying the products yourself, then you will need to have suitable qualifications.<br>
+                        If you are buying them for someone else to use, then you need to ensure that the intended end user is qualified.</p>
+
+
+                    <p><strong>I am a livestock farmer, and only occasionally use pesticides, do I need to be qualified after 26th November 2015?</strong><br>
+                        Yes, the new legislation applies to all users of professional pesticides.</p>
+
+                    <p><strong>Do I need to be qualified to spray Grazon Pro using a knapsack on my own farm?</strong><br>
+                        Yes, after 26th November, you will need to have a recognised certificate of competence to use Grazon Pro</p>
+
+                    <p><strong>Do I need to be qualified to spray Doxstar Pro, PastorPro, Thistlex or Forefront T?</strong><br>
+                        Yes, these are all professional use products, and after 26th November 2015 will need to be applied by an operator who has suitable qualifications.</p>
+
+                    <br>
+
+                    <img src="img/news-content-1.jpg" class="img-responsive pull-right">
+
+                    <h4>Sprayer testing</h4>
+
+                    <p>Mechanised, trailed or mounted spray application equipment, and boom sprayers over 3 meters over five years old must be inspected once by 26th November 2016.</p>
+
+                    <p>Boom sprayers under 3 meters will be tested at a maximum interval of 6 years. Knapsack sprayers and hand-held application equipment are exempt from the inspection scheme, although should be regularly checked on a voluntary basis.</p>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+
+                {% include 'aside-news-categories.nunjucks' %}
+                {% include 'aside-news-bulletin.nunjucks' %}
+
+            </div>
+        </div>
+    </article>
+
+</main>
+
+
+{% endblock %}

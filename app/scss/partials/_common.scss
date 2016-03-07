@@ -139,13 +139,16 @@ sup {
 		text-align: center;
 		color: white;
 		background-color: rgba(#bb650e, 0.9);
-		padding: 45px 0 32px 0;
+		padding: 35px 0 32px 0;
 		font-size: 18px;
 		h2 {
 			color: #ffcf7a;
 			font-size: 40px;
-			font-weight: 100;
-			margin: 0 0 20px 0;
+			font-weight: 200;
+			margin: 0 0 5px 0;
+		}
+		p {
+			margin-bottom: 45px;
 		}
 		a {
 			display: inline-block;
@@ -189,7 +192,7 @@ sup {
 	}
 
 	.bulletin-form {
-		width: 338px;
+		max-width: 338px;
 		line-height: 38px;
 		position: relative;
 		.email-field {
@@ -202,23 +205,17 @@ sup {
 			padding-right: 120px;
 		}
 		.bulletin-submit {
+			@extend .button;
+			margin: 0;
 			line-height: 24px;
 			font-size: 10px;
-			color: $color-arylex;
 			background-color: transparent;
-			border: 2px solid $color-arylex;
 			text-transform: uppercase;
-			letter-spacing: 3px;
-			display: inline-block;
-	    	width: 106px;
+			letter-spacing: 2px;
+	    	min-width: 100px;
 			position: absolute;
 			top: 5px;
 			right: 5px;
-			transition: all 0.15s ease-out;
-			&:hover {
-				color: white;
-				background-color: $color-arylex;
-			}
 		}
 	}
 

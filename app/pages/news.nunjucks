@@ -1,0 +1,122 @@
+{% set title = 'News & Views' %}
+{% set navActive = 3 %}
+{% extends "layout.nunjucks" %}
+{% block content %}
+
+
+<header class="header-img" style="background-image:url('img/header-3.jpg');">
+    <span class="furrows"></span>
+    <div class="header-title">
+        <h2>News &amp; Views</h2>
+    </div>
+</header>
+
+
+<main id="main" role="main" class="news">
+
+    <article class="news-featured">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="news-item-featured-big" style="background-image: url('img/news-1.jpg');">
+                    <div class="gradient">
+                        <div class="content">
+                            <p class="meta-category"><a href="#">LEGISLATION</a></p>
+                            <h3><a href="news_detail.html">Grandfather rights and grassland sprays</a></h3>
+                            <p>All sprayer operators applying professional use pesticides will need to have a Specified Certificate, previously known as a Certificate of CompeteAce</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="news-item-featured-small" style="background-image: url('img/news-2.jpg');">
+                    <div class="gradient">
+                        <div class="content">
+                            <p class="meta-category"><a href="#">CEREALS</a></p>
+                            <h3><a href="news_detail.html">Prevent volunteer beans making gappy crops</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-item-featured-small" style="background-image: url('img/news-3.jpg');">
+                    <div class="gradient">
+                        <div class="content">
+                            <p class="meta-category"><a href="#">CROPS</a></p>
+                            <h3><a href="news_detail.html">Aim for best practice against blackgrass, despite late harvest</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="news-list" data-max-items="2" data-more-items="2">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="news-item">
+                            <a href="news_detail.html"><img src="img/news-4.jpg" class="img-responsive center-block"></a>
+                            <p class="meta-category"><a href="#">CROPS</a></p>
+                            <h3><a href="news_detail.html">Arylex Discovery Videos</a></h3>
+                            <p>Watch our two new videos to learn more about the discovery and attributes of Arylex™ active, the first from a new class of synthetic auxin herbicides.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="news-item">
+                            <a href="news_detail.html"><img src="img/news-5.jpg" class="img-responsive center-block"></a>
+                            <p class="meta-category"><a href="#">CEREALS</a> - <a href="#">CROPS</a></p>
+                            <h3><a href="news_detail.html">Stop cleavers sticking in ears at harvest – act now!</a></h3>
+                            <p>Cleavers are appearing in many winter and spring cereal crops, threatening to cause lodging and wreak havoc at harvest, says Dow AgroSciences. There is still time to protect crops against pernicious broad-leaved weeds but farmers must act now.</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-sm-6">
+                        <div class="news-item">
+                            <a href="news_detail.html"><img src="img/news-6.jpg" class="img-responsive center-block"></a>
+                            <p class="meta-category"><a href="#">CROPS</a></p>
+                            <h3><a href="news_detail.html">Be aware of digestate destiny from Dow Shield 400 treated maize</a></h3>
+                            <p>Maize has increased its area from around 160,000 hectares in 2010 to close to 200,000 hectares anticipated this year.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="news-item">
+                            <a href="news_detail.html"><img src="img/news-7.jpg" class="img-responsive center-block"></a>
+                            <p class="meta-category"><a href="#">CEREALS</a> - <a href="#">CROPS</a></p>
+                            <h3><a href="news_detail.html">Spray docks in silage crops now</a></h3>
+                            <p>The best time to tackle dock infestations in silage crops is before first cut according to Andy Bailey, grassland agronomy specialist for Dow AgroSciences.</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-sm-6">
+                        <div class="news-item">
+                            <a href="news_detail.html"><img src="img/news-8.jpg" class="img-responsive center-block"></a>
+                            <p class="meta-category"><a href="#">CROPS</a></p>
+                            <h3><a href="news_detail.html">A wealth of specialist crops for classic herbicide</a></h3>
+                            <p>Vegetable, allium and nursery crop growers have been plagued in the last few years by the loss of crop protection actives, either as more products are revoked or go through re-registration and lose crops.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="news-item">
+                            <a href="news_detail.html"><img src="img/news-9.jpg" class="img-responsive center-block"></a>
+                            <p class="meta-category"><a href="#">CEREALS</a> - <a href="#">CROPS</a></p>
+                            <h3><a href="news_detail.html">Targeting cleavers and thistles in oilseed rape</a></h3>
+                            <p>Reports of sow-thistles germinating in winter oilseed rape and cleavers not as well controlled as they should be from autumn applications add up to the need for a targeted post-emergence herbicide to tidy crops up and avoid problems at harvest.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="load-more hidden">
+                    <span>LOAD MORE</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+
+                {% include 'aside-news-bulletin.nunjucks' %}
+                {% include 'aside-news-categories.nunjucks' %}
+
+            </div>
+        </div>
+    </article>
+
+</main>
+
+
+{% endblock %}

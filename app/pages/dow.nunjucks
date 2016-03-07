@@ -4,7 +4,7 @@
 {% block content %}
 
 
-<header class="header-img" style="background-image:url('img/header-1.jpg');">
+<header class="header-img" style="background-image:url('img/header-2.jpg');">
     <span class="furrows"></span>
     <div class="highlight">
         <div class="container">

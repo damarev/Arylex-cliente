@@ -6,14 +6,14 @@
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <title>Home - Arylex</title>
 
-    <link rel="shortcut icon" href="img/favicon.png"/>
-    <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.9.4/css/bootstrap-select.min.css"-->
-    <link media="all" type="text/css" rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 
     <script src="js/jquery-2.2.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
-    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.9.4/js/bootstrap-select.min.js"></script-->
+    <script src="js/bootstrap-select.min.js"></script>
 
     <script src="js/main.js"></script>
 
@@ -29,7 +29,7 @@
             <div class="container">
 
                 <div class="logo_top">
-                    <h1><a href="#">Arylex Active</a></h1>
+                    <h1><a href="index.html">Arylex Active</a></h1>
                 </div>
 
                 <nav class="menu_top" role="navigation">
@@ -40,9 +40,10 @@
                     </ul>
                 </nav>
 
-                <form role="search" method="get" action="" class="search-form">
-                    <input type="text" class="search-field" placeholder="Search"></input>
+                <form role="search" method="get" action="search.html" class="search-form">
+                    <input type="search" name="q" class="search-field" placeholder="Search" title="Search for:">
                     <button type="submit" class="search-submit"><span class="screen-reader-text">Search</span></button>
+                    <input type="hidden" name="lang" value="en">
                 </form>
 
                 <nav class="nav-main">
@@ -94,12 +95,12 @@
                 <p>As the first member of the Arylpicolinates, a new structural class within HRAC’s Group O category, Arylex represents the next generation of this unique mode of action and offers excellent crop safety, efficacy and flexibility.</p>
             </div>
             <div class="col-md-6">
-                <img src="./img/graphic-home-1.png" class="img-responsive">
+                <img src="./img/graphic-home-1.png" class="img-responsive center-block">
             </div>
         </div>
         <div class="row">
             <div class="col-md-6">
-                <img src="./img/graphic-home-2.png" class="img-responsive">
+                <img src="./img/graphic-home-2.png" class="img-responsive center-block">
             </div>
             <div class="col-md-6">
                 <h2>How it works</h2>
@@ -109,7 +110,7 @@
                 <p>Without the repressor proteins in place, the auxin-regulated genes “switch-on," inducing a cascade of unregulated growth in susceptible plants just minutes after application.</p>
                 <p>Within hours after application the uncontrolled growth disrupts multiple plant processes causing a loss of normal growth function.</p>
                 <p>In only a few hours to a few days, visual symptoms appear and continue to develop leading to death in susceptible species a few weeks after application.</p>
-                <p><img src="img/logo-key-benefits.png" class="img-responsive"></p>
+                <p><img src="img/logo-key-benefits.png" class="img-responsive center-block"></p>
             </div>
         </div>
     </article>
@@ -141,7 +142,7 @@
                     <p>Arylex can safely be applied to a variety of winter and spring cereals between early leaf development up to late boot growth stages.</p>
                     <p>Unlike its behavior in susceptible species, Arylex rapidly metabolizes into a non-active form after uptake in cereal crops. </p>
                     <p>Complementing Arylex with a safener such as cloquintocet increases the cereal plant’s ability to metabolize the product, ensuring selectivity and crop safety over a wide application window.</p>
-                    <p><img src="img/benefit-crops.jpg" class="img-responsive"></p>
+                    <p><img src="img/benefit-crops.jpg" class="img-responsive center-block"></p>
                 </div>
                 <div id="key-2">
                     <h3>SUPERIOR EFFICACY</h3>
@@ -199,18 +200,19 @@
                     <div class="col-sm-8">
                         <nav class="nav-footer">
                             <ul>
-                                <li><a href="#">Arylex Active</a></li>
-                                <li><a href="#">Dow AgroSciences</a></li>
-                                <li><a href="#">News &amp; Views</a></li>
-                                <li><a href="#">Products</a></li>
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="index.html">Arylex Active</a></li>
+                                <li><a href="dow.html">Dow AgroSciences</a></li>
+                                <li><a href="news.html">News &amp; Views</a></li>
+                                <li><a href="products.html">Products</a></li>
+                                <li><a href="faqs.html">FAQ</a></li>
+                                <li><a href="contact.html">Contact</a></li>
                             </ul>
                         </nav>
 
-                        <form role="search" method="get" action="" class="search-form">
-                            <input type="text" class="search-field" placeholder="Search"></input>
+                        <form role="search" method="get" action="search.html" class="search-form">
+                            <input type="search" name="q" class="search-field" placeholder="Search" title="Search for:">
                             <button type="submit" class="search-submit"><span class="screen-reader-text">Search</span></button>
+                            <input type="hidden" name="lang" value="en">
                         </form>
 
                     </div>
