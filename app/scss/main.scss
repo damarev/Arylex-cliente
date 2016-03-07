@@ -202,7 +202,7 @@ h1,h2,h3,h4,h5,h6 {margin-top:0;}
 		padding: 10px 15px;
 		width: 100%;
 	}
-	input[type="submit"] {
+	.submit {
 		@extend .button;
 		display: block;
 		margin: 0 auto;

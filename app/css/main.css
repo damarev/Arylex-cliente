@@ -3889,7 +3889,7 @@ h1,h2,h3,h4,h5,h6 {margin-top:0;}
 .color-arylex {
   color: #bb650e; }
 
-.button, .footer .bulletin-form .bulletin-submit, .mod-register input[type="submit"], .news .news-list .load-more span, .form-type input[type="submit"] {
+.button, .footer .bulletin-form .bulletin-submit, .mod-register .submit, .news .news-list .load-more span, .form-type input[type="submit"] {
   text-align: center;
   letter-spacing: 3px;
   color: #bb650e;
@@ -3904,11 +3904,11 @@ h1,h2,h3,h4,h5,h6 {margin-top:0;}
   line-height: 46px;
   margin: 5px;
   cursor: pointer; }
-  .button:hover, .footer .bulletin-form .bulletin-submit:hover, .mod-register input[type="submit"]:hover, .news .news-list .load-more span:hover, .form-type input[type="submit"]:hover {
+  .button:hover, .footer .bulletin-form .bulletin-submit:hover, .mod-register .submit:hover, .news .news-list .load-more span:hover, .form-type input[type="submit"]:hover {
     color: white;
     background-color: #c96400;
     text-decoration: none; }
-  .button:focus, .footer .bulletin-form .bulletin-submit:focus, .mod-register input[type="submit"]:focus, .news .news-list .load-more span:focus, .form-type input[type="submit"]:focus {
+  .button:focus, .footer .bulletin-form .bulletin-submit:focus, .mod-register .submit:focus, .news .news-list .load-more span:focus, .form-type input[type="submit"]:focus {
     text-decoration: none; }
 
 #wrap {
@@ -4225,7 +4225,7 @@ sup {
     background-color: #ebe6e3;
     padding: 10px 15px;
     width: 100%; }
-  .mod-register input[type="submit"] {
+  .mod-register .submit {
     display: block;
     margin: 0 auto;
     max-width: 190px;
