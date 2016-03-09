@@ -17,6 +17,10 @@
 
 	.search-form {
 		float: right;
+		.search-field {
+			border: none;
+			background-color: #f5f4f2;
+		}
 	}
 
 	.bulletin-form {
@@ -28,7 +32,7 @@
 			color: #968c83;
 			font-size: 11px;
 			width: 100%;
-			background-color: #f5f4f1;
+			background-color: #f5f4f2;
 			padding-left: 15px;
 			padding-right: 120px;
 		}
@@ -40,7 +44,7 @@
 			background-color: transparent;
 			text-transform: uppercase;
 			letter-spacing: 2px;
-	    	min-width: 100px;
+	    	min-width: 90px;
 			position: absolute;
 			top: 5px;
 			right: 5px;
@@ -84,6 +88,7 @@
 			padding-right: 38px;
 		}
 		.nav-footer {
+			font-size: 16px;
 			text-align: left;
 			ul {
 				li {
