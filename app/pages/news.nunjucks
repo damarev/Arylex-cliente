@@ -6,7 +6,7 @@
 
 <header class="header-img" style="background-image:url('img/header-3.jpg');">
     <span class="furrows"></span>
-    <div class="header-title">
+    <div class="title-top">
         <h2>News &amp; Views</h2>
     </div>
 </header>

@@ -23,7 +23,7 @@
 
     <article class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 page-content">
                 <h2>About us</h2>
                 <p>Dow AgroSciences is a trusted partner to farmers right around the globe. Through our world-class research and development programme we’re committed to discovering and developing effective crop protection and seed solutions. Solutions that farmers rely on to boost productivity and profitability in a safe and sustainable manner.</p>
                 <p>Recent advances in our crop protection pipeline, specifically within our cereals portfolio, demonstrate our global R & D capabilities to deliver new and innovative products to farmers helping them to keep pace with ever shifting weed pressure in cereal crops.</p>
@@ -34,16 +34,18 @@
         </div>
     </article>
 
+
     {% include 'jumbotron-products.nunjucks' %}
+
 
     <article class="container">
         <div class="row">
-            <div class="col-md-7">
-                <img src="./img/graphic-dow-2.jpg" class="img-responsive center-block">
-            </div>
-            <div class="col-md-4 col-md-offset-1">
+            <div class="col-md-4 col-md-push-8 page-content">
                 <h2>Innovation</h2>
                 <p>Ground-breaking research has always been a driving force in Dow Agrosciences. In 1999 Dow AgroSciences scientists discovered the Arylpicolinates, a completely new class of synthetic auxin chemistry within the Herbicide Resistance Action Committee’s (HRAC) Group O category. And now using our expertise in auxinic herbicides and feedback from farmers we have developed the first member of this new class of synthetic auxin herbicides.</p>
+            </div>
+            <div class="col-md-7 col-md-pull-4">
+                <img src="./img/graphic-dow-2.jpg" class="img-responsive center-block">
             </div>
         </div>
     </article>

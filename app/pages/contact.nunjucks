@@ -23,7 +23,7 @@
 
     <article class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-sm-6">
 
                 <form method="POST" action="" class="form-type" data-validate="true">
                     <legend>Contact us</legend>
@@ -67,9 +67,11 @@
                 </form>
 
             </div>
-            <div class="col-md-3 col-md-offset-2 dow-buttons">
-                <a href="#" class="button">DOW GERMANY</a>
-                <a href="#" class="button">DOW FRANCE</a>
+            <div class="col-sm-5 col-sm-offset-1">
+                <div class="dow-buttons">
+                    <a href="#" class="button">DOW GERMANY</a>
+                    <a href="#" class="button">DOW FRANCE</a>
+                </div>
             </div>
         </div>
     </article>

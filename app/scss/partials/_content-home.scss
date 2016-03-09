@@ -1,0 +1,56 @@
+
+.key-benefits {
+	@extend .container;
+	.nav {
+		ul {
+			@extend .list-unstyled;
+			li {
+				font-size: 18px;
+				margin: 5px 0;
+				text-transform: uppercase;
+				a {
+					display: block;
+					color: #c0b8b0;
+					text-decoration: none;
+					transition: color 0.15s ease-out;
+				}
+				&.selected a {
+					color: $color-arylex;
+					background: url('../img/icon-arrow.png') no-repeat right center;
+				}
+			}
+		}
+	}
+
+	.content {
+		padding-top: 10px;
+		h3 {
+			display: none;
+		}
+	}
+
+	@media (max-width: $screen-xs-max) {
+		.nav {
+			margin-bottom: 30px;
+			ul {
+				li {
+					margin: 0;
+					&.selected a {
+						background: none;
+					}
+				}
+			}
+		}
+		.content {
+			padding-top: 40px;
+			background: url('../img/icon-arrow-down.png') no-repeat 5px 0;
+			h3 {
+				display: block;
+				margin-top: 0;
+				font-size: 20px;
+				font-weight: 400;
+			}
+		}
+	}
+
+}

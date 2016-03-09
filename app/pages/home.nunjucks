@@ -1,5 +1,5 @@
 {% set title = 'Home' %}
-{% set navActive = 0 %}
+{% set navActive = 1 %}
 {% extends "layout.nunjucks" %}
 {% block content %}
 
@@ -9,10 +9,10 @@
     <div class="highlight">
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-8 col-sm-9">
                     <h2>Arylex<sup>TM</sup> active is a new, innovative herbicide for the control of broad-leaved weeds in cereals</h2>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-3">
                     <div class="video-arylex">
                         <i class="icon-video"></i>
                         Watch the Arylex <br> discovery video
@@ -26,9 +26,9 @@
 
 <main id="main" role="main">
 
-    <article class="container">
+    <article class="container page-content">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 page-content">
                 <h2>What is Arylex</h2>
                 <p>Discovered by and proprietary to Dow AgroSciences, Arylex™ active is an innovative new herbicide for the control of broadleaved weeds in cereals and other crops.</p>
                 <p>As the first member of the Arylpicolinates, a new structural class within HRAC’s Group O category, Arylex represents the next generation of this unique mode of action and offers excellent crop safety, efficacy and flexibility.</p>
@@ -38,10 +38,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
-                <img src="./img/graphic-home-2.png" class="img-responsive center-block">
-            </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-md-push-6">
                 <h2>How it works</h2>
                 <p>After absorption through the leaves and roots of susceptible species, Arylex molecules are metabolised to the active form and translocated symplastically throughout the vascular system accumulating at the plant’s growing points.</p>
                 <p>Arylex molecules are rapidly absorbed into the plant’s cells where the herbicide mimics naturally occurring hormones by binding with specific auxin receptors in the cell’s nucleus - it is this action of binding that differentiates Arylex from other synthetic auxin herbicides.</p>
@@ -51,45 +48,48 @@
                 <p>In only a few hours to a few days, visual symptoms appear and continue to develop leading to death in susceptible species a few weeks after application.</p>
                 <p><img src="img/logo-key-benefits.png" class="img-responsive center-block"></p>
             </div>
+            <div class="col-md-6 col-md-pull-6">
+                <img src="./img/graphic-home-2.png" class="img-responsive center-block">
+            </div>
         </div>
     </article>
 
     {% include 'jumbotron-products.nunjucks' %}
 
-    <article class="key-benefits">
+    <article class="key-benefits page-content">
         <h2>Key Benefits</h2>
         <div class="row">
             <div class="col-md-3 nav">
                 <ul>
-                    <li><a href="#key-1">EXCELLENT SAFETY</a></li>
-                    <li><a href="#key-2">SUPERIOR EFFICACY</a></li>
-                    <li><a href="#key-3">HIGH COMPATIBILITY</a></li>
-                    <li><a href="#key-4">EXCEPTIONAL FLEXIBILITY</a></li>
+                    <li><a href="#key-1">Excellent safety</a></li>
+                    <li><a href="#key-2">Superior efficacy</a></li>
+                    <li><a href="#key-3">High compatibility</a></li>
+                    <li><a href="#key-4">Exceptional flexibility</a></li>
                 </ul>
             </div>
             <div class="col-md-6 content">
 
                 <div id="key-1">
-                    <h3>EXCELLENT SAFETY</h3>
+                    <h3>Excellent safety</h3>
                     <p>Arylex can safely be applied to a variety of winter and spring cereals between early leaf development up to late boot growth stages.</p>
                     <p>Unlike its behavior in susceptible species, Arylex rapidly metabolizes into a non-active form after uptake in cereal crops. </p>
                     <p>Complementing Arylex with a safener such as cloquintocet increases the cereal plant’s ability to metabolize the product, ensuring selectivity and crop safety over a wide application window.</p>
                     <p><img src="img/benefit-crops.jpg" class="img-responsive center-block"></p>
                 </div>
                 <div id="key-2">
-                    <h3>SUPERIOR EFFICACY</h3>
+                    <h3>Superior efficacy</h3>
                     <p>Arylex can safely be applied to a variety of winter and spring cereals between early leaf development up to late boot growth stages.</p>
                     <p>Unlike its behavior in susceptible species, Arylex rapidly metabolizes into a non-active form after uptake in cereal crops. </p>
                     <p>Complementing Arylex with a safener such as cloquintocet increases the cereal plant’s ability to metabolize the product, ensuring selectivity and crop safety over a wide application window.</p>
                 </div>
                 <div id="key-3">
-                    <h3>HIGH COMPATIBILITY</h3>
+                    <h3>High compatibility</h3>
                     <p>Arylex can safely be applied to a variety of winter and spring cereals between early leaf development up to late boot growth stages.</p>
                     <p>Unlike its behavior in susceptible species, Arylex rapidly metabolizes into a non-active form after uptake in cereal crops. </p>
                     <p>Complementing Arylex with a safener such as cloquintocet increases the cereal plant’s ability to metabolize the product, ensuring selectivity and crop safety over a wide application window.</p>
                 </div>
                 <div id="key-4">
-                    <h3>EXCEPTIONAL FLEXIBILITY</h3>
+                    <h3>Exceptional flexibility</h3>
                     <p>Arylex can safely be applied to a variety of winter and spring cereals between early leaf development up to late boot growth stages.</p>
                     <p>Unlike its behavior in susceptible species, Arylex rapidly metabolizes into a non-active form after uptake in cereal crops. </p>
                     <p>Complementing Arylex with a safener such as cloquintocet increases the cereal plant’s ability to metabolize the product, ensuring selectivity and crop safety over a wide application window.</p>
@@ -99,7 +99,7 @@
             <div class="col-md-3">
                 <div class="video-arylex-attributes">
                     <i class="icon-video"></i>
-                    Watch the ArylexTM Active<br> attributes video
+                    Watch the Arylex<sup>TM</sup> Active<br> attributes video
                 </div>
             </div>
         </div>

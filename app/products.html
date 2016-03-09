@@ -28,15 +28,19 @@
         <header class="header-nav">
             <div class="container">
 
-                <div class="logo_top">
+                <div class="logo-top">
+                    <span class="menu-toggle">Menu</span>
                     <h1><a href="home.html">Arylex Active</a></h1>
                 </div>
 
-                <nav class="menu_top" role="navigation">
+                <nav class="nav-main" role="navigation">
                     <ul>
-                        <li><a href="#" class="globe">Dow AgroSciences Global</a></li>
-                        <li><a href="#" class="language">English</a></li>
-                        <li><a href="#" class="login">Login</a></li>
+                        <li ><a href="home.html">Arylex Active</a></li>
+                        <li ><a href="dow.html">Dow AgroSciences</a></li>
+                        <li ><a href="news.html">News &amp; Views</a></li>
+                        <li class="selected"><a href="products.html">Products</a></li>
+                        <li ><a href="faqs.html">FAQ</a></li>
+                        <li ><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
 
@@ -46,14 +50,17 @@
                     <input type="hidden" name="lang" value="en">
                 </form>
 
-                <nav class="nav-main">
+                <nav class="nav-top" role="navigation">
                     <ul>
-                        <li ><a href="home.html">Arylex Active</a></li>
-                        <li ><a href="dow.html">Dow AgroSciences</a></li>
-                        <li ><a href="news.html">News &amp; Views</a></li>
-                        <li class="selected"><a href="products.html">Products</a></li>
-                        <li ><a href="faqs.html">FAQ</a></li>
-                        <li ><a href="contact.html">Contact</a></li>
+                        <li class="global"><a href="#">Dow AgroSciences Global</a></li>
+                        <li class="login"><a href="#">Login</a></li>
+                        <li class="language"><a href="#">Language</a>
+                            <ul>
+                                <li><a href="#"><img src="img/flags/en.png"> English</a></li>
+                                <li><a href="#"><img src="img/flags/fr.png"> French</a></li>
+                                <li><a href="#"><img src="img/flags/de.png"> German</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
 
@@ -102,23 +109,8 @@
         <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-4">
-                        <p>Bulletin</p>
-                        <form class="bulletin-form">
-                            <input type="text" class="email-field">
-                            <button type="submit" class="bulletin-submit">Subscribe</button>
-                        </form>
-                        <br>
 
-                        <p>Follow us</p>
-                        <ul class="rrss">
-                            <li><a href="#" class="twitter">Twitter</a></li>
-                            <li><a href="#" class="facebook">Facebook</a></li>
-                            <li><a href="#" class="youtube">Youtube</a></li>
-                            <li><a href="#" class="linkedin">LinkedIn</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-8">
+                    <div class="col-sm-8 col-sm-push-4">
                         <nav class="nav-footer">
                             <ul>
                                 <li><a href="home.html">Arylex Active</a></li>
@@ -138,16 +130,31 @@
 
                     </div>
 
-                </div>
+                    <div class="col-sm-4 col-sm-pull-8">
+                        <p>Bulletin</p>
+                        <form class="bulletin-form">
+                            <input type="text" class="email-field">
+                            <button type="submit" class="bulletin-submit">Subscribe</button>
+                        </form>
+                        <br>
 
-                <br>
-                <br>
+                        <p>Follow us</p>
+                        <ul class="rrss">
+                            <li><a href="#" class="twitter">Twitter</a></li>
+                            <li><a href="#" class="facebook">Facebook</a></li>
+                            <li><a href="#" class="youtube">Youtube</a></li>
+                            <li><a href="#" class="linkedin">LinkedIn</a></li>
+                        </ul>
+                    </div>
+
+                </div>
 
                 <div class="copyright">
                     <img src="./img/logo-dow.png" alt="DOW">
                     <img src="./img/logo-solutions.png" alt="Solutions for the Growing World">
                     Copyright © The Dow Chemical Company (1995-2016). All Rights Reserved. ®™ Trademark of The Dow Chemical Company ("Dow") or an affiliated company of Dow
                 </div>
+
             </div>
         </footer>
 
