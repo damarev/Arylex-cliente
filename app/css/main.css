@@ -4264,7 +4264,8 @@ sup {
   float: left;
   padding-top: 40px;
   padding-bottom: 5px;
-  clear: both; }
+  clear: both;
+  transition: padding-top 0.15s ease-out; }
   .nav-main ul {
     font-size: 13px;
     margin: 0; }

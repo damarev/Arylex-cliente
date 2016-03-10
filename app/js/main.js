@@ -1,7 +1,7 @@
 
 $(function () {
 
-    var pixelsFromTheTop = 66;
+    var pixelsFromTheTop = 62;
 
     $(window).bind('scroll',function () {
         var scrollTop = $(window).scrollTop();
