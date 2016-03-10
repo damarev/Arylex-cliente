@@ -1,0 +1,53 @@
+{% set title = 'Contact' %}
+{% set navActive = 6 %}
+{% extends "layout.nunjucks" %}
+{% block content %}
+
+
+<header class="header-img" style="background-image:url('img/header-6.jpg');">
+    <span class="furrows"></span>
+    <div class="highlight">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h2>Login</h2>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<main id="main" role="main">
+
+    <article class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+
+                <form method="POST" action="" class="form-type" data-validate="true">
+                    <legend>Login</legend>
+                    <div>
+                        <label for="login-email">Email</label>
+                        <input type="email" name="email" id="login-email" data-validation="email" data-error-msg="Enter email">
+                    </div>
+                    <div>
+                        <label for="login-password">Password</label>
+                        <input type="password" name="password" id="login-password" data-validation="not-empty" data-error-msg="Enter password">
+                    </div>
+                    <div class="legal">
+                        <input type="checkbox" name="remember-me" id="login-rememberme">
+                        <label for="login-rememberme">Rememeber me on this computer</label>
+                    </div>
+                    <input type="hidden" name="language" value="en">
+                    <input type="submit" value="SUBMIT">
+                    <div class="errors"></div>
+                </form>
+
+            </div>
+        </div>
+    </article>
+
+</main>
+
+{% endblock %}

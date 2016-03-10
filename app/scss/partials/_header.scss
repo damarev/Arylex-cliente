@@ -4,23 +4,6 @@
 	> .container {
 		position: relative;
 	}
-	.logo-top {
-		float: left;
-		margin-top: 66px;
-	}
-	.nav-main {
-		float: left;
-		padding-top: 40px;
-		padding-bottom: 5px;
-		clear: both;
-	}
-	.nav-top {
-		position: absolute;
-		right: 0;
-		top: 0;
-		margin-top: 38px;
-		margin-bottom: 15px;
-	}
 	.search-form {
 		position: absolute;
 		right: 0;
@@ -30,6 +13,8 @@
 
 
 .logo-top {
+	float: left;
+	margin-top: 66px;
 	.menu-toggle {
 		display: none;
 	}
@@ -43,9 +28,41 @@
 			background: url('../img/logo.png') no-repeat;
 		}
 	}
+
+	@media (max-width: $screen-xs-max) {
+		float: none;
+		margin: 0;
+		height: 72px;
+		padding-top: 22px;
+		padding-left: 38px;
+		background-color: white;
+		border-bottom: 1px solid #f3ede5;
+		.menu-toggle {
+			display: block;
+			float: right;
+			margin-right: 30px;
+			background: url('../img/icon-menu-open.png') no-repeat center center;
+			width: 30px;
+			height: 24px;
+			text-indent: -9999px;
+			cursor: pointer;
+		}
+		h1 {
+			a {
+				height: 24px;
+				background-size: contain;
+			}
+		}
+	}
 }
 
+
+
 .nav-main {
+	float: left;
+	padding-top: 40px;
+	padding-bottom: 5px;
+	clear: both;
 	ul {
 		@extend .list-inline;
 		font-size: 13px;
@@ -59,22 +76,39 @@
 				border-color: $color-arylex;
 				text-decoration: none;
 			}
+			a {
+				color: $color-arylex-light;
+				padding-bottom: 3px;
+				border-bottom: 2px solid transparent;
+				transition: all 0.15s ease-out;
+				&:hover {
+					border-color: $color-arylex;
+					text-decoration: none;
+				}
+			}
 		}
+	}
 
-		a {
-			color: $color-arylex-light;
-			padding-bottom: 3px;
-			border-bottom: 2px solid transparent;
-			transition: all 0.15s ease-out;
-			&:hover {
-				border-color: $color-arylex;
-				text-decoration: none;
+	@media (max-width: $screen-xs-max) {
+		float: none;
+		padding: 20px 0 15px 38px;
+		ul {
+			font-size: 18px;
+			li {
+				display: block;
+				padding: 8px 0 !important;
 			}
 		}
 	}
 }
 
+
 .nav-top {
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin-top: 38px;
+	margin-bottom: 15px;
 	> ul {
 		@extend .list-inline;
 		margin: 0;
@@ -83,19 +117,19 @@
 		> li {
 			padding: 0 10px;
 			&.global > a {background: url('../img/icon-globe.png') no-repeat right -1px;}
-			&.language > a {background: url('../img/icon-language.png') no-repeat right -1px;}
 			&.login > a {background: url('../img/icon-login.png') no-repeat right -1px;}
+			&.language > a {background: url('../img/icon-language.png') no-repeat right -1px;}
 			&.language {
 				> ul {
   					@include list-unstyled;
   					position: absolute;
-  					right: 0;
-					padding: 0;
-					width: 100%;
-					text-align: right;
+  					right: 10px;
+					padding: 0 5px;
+					text-align: left;
+					background-color: white;
+					border: 1px solid #ebe8e5;
 					> li {
-						padding: 0 0 0 0;
-						display: inline;
+						padding: 2px 0;
 						img {
 							position: relative;
 							top: -1px;
@@ -110,11 +144,59 @@
 			}
 		}
 	}
+	@media (max-width: $screen-xs-max) {
+		position: static;
+		margin: 25px 0 25px 38px;
+		> ul {
+			font-size: 13px;
+			> li {
+				display: block;
+				padding: 5px 0;
+				&.language {
+					> ul {
+						background-color: transparent;
+						border: none;
+						padding: 0;
+						text-align: left;
+						position: static;
+						> li {
+							display: block;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media (min-width: $screen-sm-min) {
+	.header-nav.nav-fixed {
+		position: fixed;
+		top: -40px;
+		width: 100%;
+		z-index: 2;
+		border-bottom: 1px solid #f3ede5;
+		background-color: white;
+		.nav-main {
+			padding-top: 20px;
+		}
+		.nav-top {
+			display: none;
+		}
+	}
 }
 
 
 @media (max-width: $screen-xs-max) {
+	body {
+		padding-top: 72px;
+	}
 	.header-nav {
+		position: fixed;
+		top: 0;
+		z-index: 10;
+		width: 100%;
 		height: 72px;
 		> .container {
 			height: inherit;
@@ -122,6 +204,7 @@
 			padding-left: 0;
 			padding-right: 0;
 			background-color: #f5f4f2;
+			border-bottom: 1px solid #f3ede5;
 		}
 		&.mobile-open {
 			> .container {
@@ -134,57 +217,6 @@
 				}
 			}
 		}
-		.logo-top {
-			float: none;
-			margin: 0;
-			background-color: white;
-			padding-top: 22px;
-			padding-left: 38px;
-			height: 72px;
-			.menu-toggle {
-				display: block;
-				float: right;
-				margin-right: 30px;
-				background: url('../img/icon-menu-open.png') no-repeat center center;
-				width: 30px;
-				height: 24px;
-				text-indent: -9999px;
-				cursor: pointer;
-			}
-			a {
-				height: 24px;
-				background-size: contain;
-			}
-		}
-		.nav-main {
-			float: none;
-			padding: 20px 0 15px 38px;
-			ul {
-				li {
-					display: block;
-					padding: 8px 0 !important;
-				}
-			}
-		}
-		.nav-top {
-			position: static;
-			margin: 25px 0 25px 38px;
-			> ul {
-				> li {
-					display: block;
-					padding: 5px 0;
-					&.language {
-						ul {
-							text-align: left;
-							position: static;
-							li {
-								display: block;
-							}
-						}
-					}
-				}
-			}
-		}
 		.search-form {
 			position: relative;
 			right: 0;
@@ -192,6 +224,18 @@
 			padding-left: 38px;
 		}
 	}
-
 }
 
+
+
+
+@media (max-width: 480px) {
+	.header-nav {
+		.logo-top, .nav-main, .search-form {
+			padding-left: 20px;
+		}
+		.nav-top {
+			margin-left: 20px;
+		}
+	}
+}

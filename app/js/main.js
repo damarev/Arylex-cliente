@@ -1,10 +1,23 @@
 
 $(function () {
 
+    var pixelsFromTheTop = 66;
+
+    $(window).bind('scroll',function () {
+        var scrollTop = $(window).scrollTop();
+        $('.header-nav').toggleClass('nav-fixed', scrollTop > pixelsFromTheTop)
+    });
+
 
     $('.header-nav .logo-top .menu-toggle').on('click', function(e){
         e.preventDefault();
         $(this).closest('.header-nav').toggleClass('mobile-open')
+    });
+
+
+    $('.header-nav .nav-top .language > a').on('click', function(e){
+        e.preventDefault();
+        $(this).next().toggleClass('hidden')
     });
 
 

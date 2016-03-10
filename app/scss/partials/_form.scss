@@ -23,14 +23,14 @@
 			right: -15px;
 		}
 	}
-	input[type="text"], input[type="email"], textarea {
+	input[type="text"], input[type="email"], input[type="password"], textarea {
 		width: 100%;
 		background-color: #f5f4f1;
 		border: 1px solid #f5f4f1;
 		color: #6f625a;
 		font-size: 15px;
 	}
-	input[type="text"], input[type="email"] {
+	input[type="text"], input[type="email"], input[type="password"] {
 		line-height: 38px;
 		padding: 0 13px;
 	}
@@ -64,7 +64,7 @@
 		font-weight: 400;
 		font-size: 13px;
 	}
-	input[type="text"].error, input[type="email"].error, textarea.error {
+	input[type="text"].error, input[type="email"].error, input[type="password"].error, textarea.error {
 		border-color: red;
 	}
 	.legal {
@@ -82,6 +82,7 @@
 	}
 	div.errors {
 		clear: both;
+		color: red;
 		p {
 			margin: 0;
 		}

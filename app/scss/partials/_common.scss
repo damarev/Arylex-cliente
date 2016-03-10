@@ -2,19 +2,9 @@
 * {outline: none;}
 *:focus {outline: none !important;}
 body {background-color: #f7f6f5; color: #6f625a;}
-.container {max-width: 1024px;}
-article h2 {margin: 0 0 25px 0;}
 article p {margin:0 0 30px 0; line-height: 1.6;}
-
-sup {
-	vertical-align: super;
-	font-size:.35em;
-}
-
-/*
-h1,h2,h3,h4,h5,h6 {margin-top:0;}
-*/
-
+sup {vertical-align: super; font-size:.35em;}
+.container {max-width: 1024px;}
 .color-arylex {color: $color-arylex}
 
 
@@ -112,6 +102,13 @@ h1,h2,h3,h4,h5,h6 {margin-top:0;}
 		> article {
 			padding-left: 38px;
 			padding-right: 38px;
+		}
+	}
+
+	@media (max-width: 480px) {
+		> article {
+			padding-left: 20px;
+			padding-right: 20px;
 		}
 	}
 
@@ -222,7 +219,7 @@ h1,h2,h3,h4,h5,h6 {margin-top:0;}
 		height: 360px;
 		> .furrows {
 			top: 80px;
-			width: 320px;
+			width: 100%;
 		}
 		.container {
 			padding-left: 38px;
@@ -247,6 +244,14 @@ h1,h2,h3,h4,h5,h6 {margin-top:0;}
 				height: 50px;
 				margin-bottom: 0;
 			}
+		}
+	}
+	@media (max-width: 480px) {
+		> .furrows {
+		}
+		.container {
+			padding-left: 20px;
+			padding-right: 20px;
 		}
 	}
 }

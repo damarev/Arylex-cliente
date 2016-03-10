@@ -53,9 +53,9 @@
                 <nav class="nav-top" role="navigation">
                     <ul>
                         <li class="global"><a href="#">Dow AgroSciences Global</a></li>
-                        <li class="login"><a href="#">Login</a></li>
+                        <li class="login"><a href="login.html">Login</a></li>
                         <li class="language"><a href="#">Language</a>
-                            <ul>
+                            <ul class="hidden">
                                 <li><a href="#"><img src="img/flags/en.png"> English</a></li>
                                 <li><a href="#"><img src="img/flags/fr.png"> French</a></li>
                                 <li><a href="#"><img src="img/flags/de.png"> German</a></li>
@@ -76,7 +76,7 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-sm-8 col-sm-push-4">
+                    <div class="col-sm-7 col-sm-push-5">
                         <nav class="nav-footer">
                             <ul>
                                 <li><a href="home.html">Arylex Active</a></li>
@@ -96,7 +96,7 @@
 
                     </div>
 
-                    <div class="col-sm-4 col-sm-pull-8">
+                    <div class="col-sm-5 col-sm-pull-7">
                         <p>Bulletin</p>
                         <form class="bulletin-form">
                             <input type="text" class="email-field">
@@ -118,7 +118,7 @@
                 <div class="copyright">
                     <img src="./img/logo-dow.png" alt="DOW">
                     <img src="./img/logo-solutions.png" alt="Solutions for the Growing World">
-                    Copyright © The Dow Chemical Company (1995-2016). All Rights Reserved. ®™ Trademark of The Dow Chemical Company ("Dow") or an affiliated company of Dow
+                    <span>Copyright © The Dow Chemical Company (1995-2016). All Rights Reserved. ®™ Trademark of The Dow Chemical Company ("Dow") or an affiliated company of Dow</span>
                 </div>
 
             </div>
