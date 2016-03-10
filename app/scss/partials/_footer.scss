@@ -9,8 +9,12 @@
 	.nav-footer {
 		text-align: right;
 		margin-bottom: 20px;
+		font-size: 13px;
 		ul {
 			@extend .list-inline;
+			li {
+				padding: 0 10px;
+			}
 			margin: 0;
 		}
 	}

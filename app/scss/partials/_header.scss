@@ -172,20 +172,24 @@
 
 
 @media (min-width: $screen-sm-min) {
-	.header-nav.nav-fixed {
-		position: fixed;
-		top: -45px;
-		left: 0;
-		width: 100%;
-		z-index: 2;
-		border-bottom: 1px solid #f3ede5;
-		background-color: white;
-		.nav-main {
-		}
-		.nav-top {
-			display: none;
+	body.nav-fixed {
+		padding-top: 179px;
+		.header-nav {
+			position: fixed;
+			top: -45px;
+			left: 0;
+			width: 100%;
+			z-index: 2;
+			border-bottom: 1px solid #f3ede5;
+			background-color: white;
+			.nav-main {
+			}
+			.nav-top {
+				display: none;
+			}
 		}
 	}
+
 }
 
 

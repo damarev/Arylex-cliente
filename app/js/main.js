@@ -5,7 +5,7 @@ $(function () {
 
     $(window).bind('scroll',function () {
         var scrollTop = $(window).scrollTop();
-        $('.header-nav').toggleClass('nav-fixed', scrollTop > pixelsFromTheTop)
+        $('body').toggleClass('nav-fixed', scrollTop > pixelsFromTheTop)
     });
 
 
