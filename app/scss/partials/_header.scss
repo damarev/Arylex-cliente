@@ -174,13 +174,13 @@
 @media (min-width: $screen-sm-min) {
 	.header-nav.nav-fixed {
 		position: fixed;
-		top: -40px;
+		top: -45px;
+		left: 0;
 		width: 100%;
 		z-index: 2;
 		border-bottom: 1px solid #f3ede5;
 		background-color: white;
 		.nav-main {
-			padding-top: 20px;
 		}
 		.nav-top {
 			display: none;
