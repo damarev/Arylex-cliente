@@ -4217,6 +4217,7 @@ sup {
     min-width: 248px; }
 
 .header-nav {
+  background-color: white;
   padding-bottom: 12px; }
   .header-nav > .container, .header-nav > .key-benefits, .news .header-nav > .news-featured, .news .header-nav > .news-list, .news .header-nav > .news-detail {
     position: relative; }

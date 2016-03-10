@@ -1,4 +1,4 @@
-{% set title = 'Contact' %}
+{% set title = 'Login' %}
 {% set navActive = 6 %}
 {% extends "layout.nunjucks" %}
 {% block content %}
@@ -36,8 +36,8 @@
                         <input type="password" name="password" id="login-password" data-validation="not-empty" data-error-msg="Enter password">
                     </div>
                     <div class="legal">
-                        <input type="checkbox" name="remember-me" id="login-rememberme">
-                        <label for="login-rememberme">Rememeber me on this computer</label>
+                        <input type="checkbox" name="remember-me" id="login-remember">
+                        <label for="login-remember">Remember me on this computer</label>
                     </div>
                     <input type="hidden" name="language" value="en">
                     <input type="submit" value="SUBMIT">
