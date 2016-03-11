@@ -143,6 +143,10 @@
 			> a {
 				padding-right: 18px;
 				color: #968c83;
+				&:hover {
+					color: $color-arylex;
+					text-decoration: none;
+				}
 			}
 		}
 	}

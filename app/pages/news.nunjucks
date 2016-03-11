@@ -18,31 +18,31 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="news-item-featured-big" style="background-image: url('img/news-1.jpg');">
-                    <div class="gradient">
+                    <a href="#" class="gradient">
                         <div class="content">
-                            <p class="meta-category"><a href="#">LEGISLATION</a></p>
-                            <h3><a href="news_detail.html">Grandfather rights and grassland sprays</a></h3>
+                            <p class="meta-category">LEGISLATION</p>
+                            <h3>Grandfather rights and grassland sprays</h3>
                             <p>All sprayer operators applying professional use pesticides will need to have a Specified Certificate, previously known as a Certificate of CompeteAce</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="news-item-featured-small" style="background-image: url('img/news-2.jpg');">
-                    <div class="gradient">
+                    <a href="#" class="gradient">
                         <div class="content">
-                            <p class="meta-category"><a href="#">CEREALS</a></p>
-                            <h3><a href="news_detail.html">Prevent volunteer beans making gappy crops</a></h3>
+                            <p class="meta-category">CEREALS</p>
+                            <h3>Prevent volunteer beans making gappy crops</h3>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="news-item-featured-small" style="background-image: url('img/news-3.jpg');">
-                    <div class="gradient">
+                    <a href="#" class="gradient">
                         <div class="content">
-                            <p class="meta-category"><a href="#">CROPS</a></p>
-                            <h3><a href="news_detail.html">Aim for best practice against blackgrass, despite late harvest</a></h3>
+                            <p class="meta-category">CROPS</p>
+                            <h3>Aim for best practice against blackgrass, despite late harvest</h3>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -109,8 +109,8 @@
             </div>
             <div class="col-md-4">
 
-                {% include 'aside-news-bulletin.nunjucks' %}
                 {% include 'aside-news-categories.nunjucks' %}
+                {% include 'aside-news-bulletin.nunjucks' %}
 
             </div>
         </div>
