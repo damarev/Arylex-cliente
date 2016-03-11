@@ -4081,14 +4081,15 @@ a:hover, a:focus {
     line-height: 1.3; }
     .header-img .video-arylex a {
       color: white; }
+      .header-img .video-arylex a:hover {
+        opacity: 0.8; }
+        .header-img .video-arylex a:hover .icon-video {
+          opacity: 0.8; }
     .header-img .video-arylex .icon-video {
       margin: 0 auto;
       display: block;
       width: 80px;
       height: 80px;
-      background-color: white;
-      border-radius: 99px;
-      cursor: pointer;
       margin-bottom: 15px; }
   @media (max-width: 1199px) {
     .header-img .highlight h2 {
@@ -4105,29 +4106,44 @@ a:hover, a:focus {
         padding-left: 38px;
         padding-right: 38px; }
       .header-img .highlight h2 {
-        font-size: 24px; }
+        font-size: 30px; }
       .header-img .highlight p {
         font-size: 16px; }
       .header-img .video-arylex {
         font-size: 14px;
         margin-top: 22px;
-        text-align: left; }
+        text-align: left;
+        line-height: 1.4; }
         .header-img .video-arylex .icon-video {
           float: left;
-          margin-right: 22px;
-          width: 50px;
-          height: 50px;
-          margin-bottom: 0; } }
+          margin-right: 15px;
+          width: 40px;
+          height: 40px;
+          margin-bottom: 0;
+          background-size: 60%; } }
   @media (max-width: 480px) {
+    .header-img > .furrows {
+      width: 75%; }
     .header-img .container, .header-img .key-benefits, .header-img .news .news-featured, .news .header-img .news-featured, .header-img .news .news-list, .news .header-img .news-list, .header-img .news .news-detail, .news .header-img .news-detail {
       padding-left: 20px;
-      padding-right: 20px; } }
+      padding-right: 20px; }
+    .header-img .highlight {
+      bottom: 30px; }
+      .header-img .highlight h2 {
+        margin: 0; }
+      .header-img .highlight p {
+        display: none; } }
 
 .video-arylex-attributes {
   text-align: center;
   font-size: 14px;
-  font-weight: 300;
-  color: #968c83; }
+  font-weight: 300; }
+  .video-arylex-attributes a {
+    color: #968c83; }
+    .video-arylex-attributes a:hover {
+      color: #bb650e; }
+      .video-arylex-attributes a:hover .icon-video {
+        opacity: 0.8; }
   .video-arylex-attributes .icon-video {
     margin: 0 auto;
     display: block;
@@ -4136,13 +4152,26 @@ a:hover, a:focus {
     border: 1px solid #52bebe;
     border-radius: 99px;
     cursor: pointer;
-    margin-bottom: 20px; }
+    margin-bottom: 10px; }
+  @media (max-width: 767px) {
+    .video-arylex-attributes {
+      line-height: 1.5;
+      text-align: left; }
+      .video-arylex-attributes .icon-video {
+        float: left;
+        width: 50px;
+        height: 50px;
+        margin-right: 15px;
+        background-size: 60%;
+        position: relative;
+        top: -5px; } }
 
 .icon-video {
-  background: url("../img/icon-video.png") no-repeat center center;
-  display: inline-block;
   width: 44px;
-  height: 33px; }
+  height: 33px;
+  border-radius: 99px;
+  display: inline-block;
+  background: white url("../img/icon-video.png") no-repeat center center; }
 
 .jumbotron-products {
   background: url("../img/banner-products.jpg") no-repeat center center;

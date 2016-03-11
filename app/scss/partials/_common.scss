@@ -221,15 +221,19 @@ a:hover, a:focus {text-decoration: none; outline: none;}
 		font-size: 24px;
 		font-weight: 300;
 		line-height: 1.3;
-		a {color: white;}
+		a {color: white;
+			&:hover {
+				opacity: 0.8;
+				.icon-video {
+					opacity: 0.8;
+				}
+			}
+		}
 		.icon-video {
 			margin: 0 auto;
 			display: block;
 			width: 80px;
 			height: 80px;
-			background-color: white;
-			border-radius: 99px;
-			cursor: pointer;
 			margin-bottom: 15px;
 		}
 	}
@@ -255,7 +259,7 @@ a:hover, a:focus {text-decoration: none; outline: none;}
 		}
 		.highlight {
 			h2 {
-				font-size: 24px;
+				font-size: 30px;
 			}
 			p {
 				font-size: 16px;
@@ -265,35 +269,51 @@ a:hover, a:focus {text-decoration: none; outline: none;}
 			font-size: 14px;
 			margin-top: 22px;
 			text-align: left;
+			line-height: 1.4;
 			.icon-video {
 				float: left;
-				margin-right: 22px;
-				width: 50px;
-				height: 50px;
+				margin-right: 15px;
+				width: 40px;
+				height: 40px;
 				margin-bottom: 0;
+				background-size: 60%;
 			}
 		}
 	}
 	@media (max-width: 480px) {
 		> .furrows {
+			width: 75%;
 		}
 		.container {
 			padding-left: 20px;
 			padding-right: 20px;
 		}
+		.highlight {
+			bottom: 30px;
+			h2 {
+				margin: 0;
+			}
+			p {
+				display: none;
+			}
+		}
 	}
 }
-
-
 
 
 .video-arylex-attributes {
 	text-align: center;
 	font-size: 14px;
 	font-weight: 300;
-	color: #968c83;
-
-
+	a {
+		color: #968c83;
+		&:hover {
+			color: $color-arylex;
+			.icon-video {
+				opacity: 0.8;
+			}
+		}
+	}
 	.icon-video {
 		margin: 0 auto;
 		display: block;
@@ -302,15 +322,30 @@ a:hover, a:focus {text-decoration: none; outline: none;}
 		border: 1px solid #52bebe;
 		border-radius: 99px;
 		cursor: pointer;
-		margin-bottom: 20px;
+		margin-bottom: 10px;
+	}
+	@media (max-width: $screen-xs-max) {
+		//background
+		line-height: 1.5;
+		text-align: left;
+		.icon-video {
+			float: left;
+			width: 50px;
+			height: 50px;
+			margin-right: 15px;
+			background-size: 60%;
+			position: relative;
+			top: -5px;
+		}
 	}
 }
 
 .icon-video {
-	background: url('../img/icon-video.png') no-repeat center center;
-	display: inline-block;
 	width: 44px;
 	height: 33px;
+	border-radius: 99px;
+	display: inline-block;
+	background: white url('../img/icon-video.png') no-repeat center center;
 }
 
 .jumbotron-products {
