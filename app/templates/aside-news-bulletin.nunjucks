@@ -3,6 +3,8 @@
                         <h3>BULLETIN</h3>
                         <p>Register here to get the latest news and opinions straight to your inbox</p>
                         <input type="text" name="email">
-                        <input type="submit" class="submit" value="SUBSCRIBE">
+                        <div class="submit">
+	                        <input type="submit" class="submit" value="SUBSCRIBE">
+                        </div>
                     </form>
                 </div>

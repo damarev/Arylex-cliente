@@ -75,6 +75,9 @@ sup {vertical-align: super; font-size:.35em;}
 	line-height: 46px;
 	margin: 5px;
 	cursor: pointer;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-webkit-appearance: none;
 	&:hover {
 		color: white;
 		background-color: #c96400;
@@ -135,7 +138,7 @@ sup {vertical-align: super; font-size:.35em;}
 		width: 20px;
 		position: absolute;
 		top: -1px;
-	    right: 15px;
+		right: 15px;
 	}
 	@media (max-width: $screen-xs-max) {
 		line-height: 38px;
@@ -348,7 +351,7 @@ sup {vertical-align: super; font-size:.35em;}
 .faqs {
 	h4 {
 		font-size: 20px;
-	   font-weight: 400;
+		font-weight: 400;
 		color: #a69c95;
 		padding-left: 30px;
 		margin: 0 0 30px 0;
@@ -360,6 +363,12 @@ sup {vertical-align: super; font-size:.35em;}
 	}
 	> div {
 		padding-left: 30px;
+	}
+	@media (max-width: $screen-xs-max) {
+		h4 {
+			font-size: 18px;
+			background-position: 8px 2px;
+		}
 	}
 }
 
@@ -382,13 +391,16 @@ sup {vertical-align: super; font-size:.35em;}
 		padding: 10px 15px;
 		width: 100%;
 	}
-	.submit {
-		@extend .button;
-		display: block;
-		margin: 0 auto;
-		max-width: 190px;
-		position: relative;
-		top: 27px;
+	div.submit {
+		text-align: center;
+		.submit {
+			@extend .button;
+			display: inline-block;
+			margin: 0 auto;
+			max-width: 190px;
+			position: relative;
+			top: 27px;
+		}
 	}
 }
 
@@ -409,6 +421,10 @@ sup {vertical-align: super; font-size:.35em;}
 				color: #a69c95;
 				padding: 20px 22px;
 				display: block;
+				&:hover {
+					color: $color-arylex;
+					text-decoration: none;
+				}
 			}
 		}
 	}

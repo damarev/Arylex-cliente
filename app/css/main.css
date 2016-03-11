@@ -3932,7 +3932,7 @@ sup {
     font-size: 18px;
     margin: 0 0 15px 0; } }
 
-.button, .mod-register .submit, .footer .bulletin-form .bulletin-submit, .form-type input[type="submit"], .news .news-list .load-more span {
+.button, .mod-register div.submit .submit, .footer .bulletin-form .bulletin-submit, .form-type input[type="submit"], .news .news-list .load-more span {
   text-align: center;
   letter-spacing: 3px;
   color: #bb650e;
@@ -3946,12 +3946,15 @@ sup {
   transition: all 0.15s ease-out;
   line-height: 46px;
   margin: 5px;
-  cursor: pointer; }
-  .button:hover, .mod-register .submit:hover, .footer .bulletin-form .bulletin-submit:hover, .form-type input[type="submit"]:hover, .news .news-list .load-more span:hover {
+  cursor: pointer;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -webkit-appearance: none; }
+  .button:hover, .mod-register div.submit .submit:hover, .footer .bulletin-form .bulletin-submit:hover, .form-type input[type="submit"]:hover, .news .news-list .load-more span:hover {
     color: white;
     background-color: #c96400;
     text-decoration: none; }
-  .button:focus, .mod-register .submit:focus, .footer .bulletin-form .bulletin-submit:focus, .form-type input[type="submit"]:focus, .news .news-list .load-more span:focus {
+  .button:focus, .mod-register div.submit .submit:focus, .footer .bulletin-form .bulletin-submit:focus, .form-type input[type="submit"]:focus, .news .news-list .load-more span:focus {
     text-decoration: none; }
 
 #wrap {
@@ -4169,6 +4172,11 @@ sup {
 .faqs > div {
   padding-left: 30px; }
 
+@media (max-width: 767px) {
+  .faqs h4 {
+    font-size: 18px;
+    background-position: 8px 2px; } }
+
 .mod-register {
   padding: 0 28px;
   border: 2px solid #d8d2ca;
@@ -4187,12 +4195,14 @@ sup {
     background-color: #ebe6e3;
     padding: 10px 15px;
     width: 100%; }
-  .mod-register .submit {
-    display: block;
-    margin: 0 auto;
-    max-width: 190px;
-    position: relative;
-    top: 27px; }
+  .mod-register div.submit {
+    text-align: center; }
+    .mod-register div.submit .submit {
+      display: inline-block;
+      margin: 0 auto;
+      max-width: 190px;
+      position: relative;
+      top: 27px; }
 
 .mod-categories {
   margin: 0 20px 50px 20px; }
@@ -4209,6 +4219,9 @@ sup {
       color: #a69c95;
       padding: 20px 22px;
       display: block; }
+      .mod-categories ul li a:hover {
+        color: #bb650e;
+        text-decoration: none; }
 
 .dow-buttons {
   text-align: center;
