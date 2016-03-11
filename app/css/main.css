@@ -4079,6 +4079,8 @@ a:hover, a:focus {
     font-size: 24px;
     font-weight: 300;
     line-height: 1.3; }
+    .header-img .video-arylex a {
+      color: white; }
     .header-img .video-arylex .icon-video {
       margin: 0 auto;
       display: block;
@@ -4110,8 +4112,6 @@ a:hover, a:focus {
         font-size: 14px;
         margin-top: 22px;
         text-align: left; }
-        .header-img .video-arylex a {
-          color: white; }
         .header-img .video-arylex .icon-video {
           float: left;
           margin-right: 22px;
