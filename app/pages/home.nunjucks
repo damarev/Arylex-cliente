@@ -4,7 +4,7 @@
 {% block content %}
 
 
-<header class="header-img">
+<header class="header-img header-home">
     <span class="furrows"></span>
     <div class="highlight">
         <div class="container">

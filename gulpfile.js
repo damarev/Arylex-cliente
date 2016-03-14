@@ -3,15 +3,19 @@ var browserSync    = require('browser-sync').create();
 var sass           = require('gulp-sass');
 var nunjucks       = require('gulp-nunjucks');
 var nunjucksRender = require('gulp-nunjucks-render');
+var sourcemaps     = require('gulp-sourcemaps');
 
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
     return gulp.src("app/scss/main.scss")
-        .pipe(sass().on('error', sass.logError))
+        .pipe(sourcemaps.init())
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest("app/css"))
         .pipe(browserSync.stream());
 });
+
 
 gulp.task('nunjucks', function() {
 
@@ -49,5 +53,6 @@ gulp.task('serve', ['sass'], function() {
     gulp.watch("app/scss/**/*.scss", ['sass']);
     gulp.watch("app/*.html").on('change', browserSync.reload);
 });
+
 
 gulp.task('default', ['serve']);
