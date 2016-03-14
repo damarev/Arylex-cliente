@@ -29,6 +29,8 @@
 		border: 1px solid #f5f4f1;
 		color: #6f625a;
 		font-size: 15px;
+		border-radius: 0;
+		-webkit-appearance: none;
 	}
 	input[type="text"], input[type="email"], input[type="password"] {
 		line-height: 38px;
