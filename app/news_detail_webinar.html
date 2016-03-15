@@ -69,7 +69,7 @@
 
     <div id="wrap">
 
-
+		
 
 
 <header class="header-img" style="background-image:url('img/header-3.jpg');">
@@ -165,12 +165,14 @@
                 </div>
 
                                 <div class="mod-register">
-                    <form>
+                    <form class="bulletin-form" action="json/subscribe_success.json" method="POST" data-msg-success="Éxito!" data-msg-error="Error!" data-msg-error-email="Email ya suscrito!">
                         <h3>BULLETIN</h3>
                         <p>Register here to get the latest news and opinions straight to your inbox</p>
-                        <input type="text" name="email">
+                        <input type="text" name="email" data-error="El email no es válido">
+                        <p class="errors"></p>
                         <div class="submit">
-	                        <input type="submit" class="submit" value="SUBSCRIBE">
+                            <input type="hidden" name="lang" value="en">
+                            <input type="submit" class="submit" value="SUBSCRIBE">
                         </div>
                     </form>
                 </div>
@@ -212,9 +214,11 @@
 
                     <div class="col-sm-5 col-sm-pull-7">
                         <p>Bulletin</p>
-                        <form class="bulletin-form">
-                            <input type="text" class="email-field">
+                        <form class="bulletin-form" action="json/subscribe_success.json" method="POST" data-msg-success="Éxito!" data-msg-error="Error!" data-msg-error-email="Email ya suscrito!">
+                            <input type="text" name="email" class="email-field" data-error="El email no es válido">
+                            <input type="hidden" name="lang" value="en">
                             <button type="submit" class="bulletin-submit">Subscribe</button>
+                            <div class="errors"></div>
                         </form>
                         <br>
 
