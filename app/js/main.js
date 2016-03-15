@@ -106,6 +106,7 @@ $(function () {
             $.ajax({
                 url: form.attr('action'),
                 method: form.attr('method'),
+                dataType: 'json',
                 data: data,
                 success: function(data){
                     if(data.error == 0){
@@ -154,13 +155,27 @@ $(function () {
     }
 
     function onSubmit(e){
+        e.preventDefault();
         is_form_ok = true;
         errors.html('');
 
         $('*[data-validation]', form).removeClass('error').each(validateField);
 
-        if(!is_form_ok){
-            e.preventDefault();
+        if(is_form_ok){
+            $.ajax({
+                url: form.attr('action'),
+                method: form.attr('method'),
+                dataType: 'json',
+                data: form.serialize(),
+                success: function(data){
+                    if(data.error == 0){
+                        form.get(0).reset();
+                        errors.html(form.data('msg-success'));
+                    }else{
+                        errors.html(form.data('msg-error'));
+                    }
+                }
+            });
         }
     }
 
