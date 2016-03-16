@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta content="IE=10" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
-    <title>Contact - Arylex</title>
+    <title>Login - Arylex</title>
 
     <link rel="shortcut icon" href="img/favicon.png">
 
@@ -38,7 +38,7 @@
                     <li ><a href="news.html">News &amp; Views</a></li>
                     <li ><a href="products.html">Products</a></li>
                     <li ><a href="faqs.html">FAQ</a></li>
-                    <li class="current-menu-item"><a href="contact.html">Contact</a></li>
+                    <li ><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
 
@@ -78,7 +78,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <h2>Contact</h2>
+                    <h2>Login</h2>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
                 </div>
             </div>
@@ -91,56 +91,28 @@
 
     <article class="container">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-6 col-sm-offset-3">
 
-                <form method="POST" action="json/subscribe_success.json" class="form-type form-type-contact" data-validate="true" data-msg-success="Éxito!" data-msg-error="Error!">
-                    <legend>Contact us</legend>
+                <form method="POST" action="" class="form-type" data-validate="true">
+                    <legend>Login</legend>
                     <div>
-                        <label for="contact-name" class="required">Name</label>
-                        <input type="text" name="name" id="contact-name" data-validation="not-empty" data-error-msg="Enter name">
+                        <label for="login-email">Email</label>
+                        <input type="email" name="email" id="login-email" data-validation="email" data-error-msg="Enter email">
                     </div>
                     <div>
-                        <label for="contact-email" class="required">Email Address</label>
-                        <input type="email" name="email" id="contact-email" data-validation="email" data-error-msg="Email is not valid">
-                    </div>
-                    <div>
-                        <label for="contact-email-repeat" class="required">Confirm email</label>
-                        <input type="email" name="email-check" id="contact-email-repeat" data-validation="repeat" data-repeat-field="#contact-email" data-error-msg="Email does not match">
-                    </div>
-                    <div>
-                        <label for="contact-telephone">Telephone</label>
-                        <input type="text" name="telephone" id="contact-telephone">
-                    </div>
-                    <p class="hint-required">* Required</p>
-                    <legend>Please choose a subject and write your question</legend>
-                    <div>
-                        <select id="subjet" class="selectpicker" name="subject" data-validation="select" data-error-msg="Choose a subject">
-                            <option value="">Choose one of this options</option>
-                            <option value="Opción 1">Opción 1</option>
-                            <option value="Opción 2">Opción 2</option>
-                            <option value="Opción 3">Opción 3</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="contact-question">Question</label>
-                        <textarea id="contact-question" name="question"></textarea>
+                        <label for="login-password">Password</label>
+                        <input type="password" name="password" id="login-password" data-validation="not-empty" data-error-msg="Enter password">
                     </div>
                     <div class="legal">
-                        <input type="checkbox" name="bbll" id="contact-legal-check" data-validation="checkbox" data-error-msg="Must accept legal terms">
-                        <label for="contact-legal-check">Accept legal terms</label>
+                        <input type="checkbox" name="remember-me" id="login-remember">
+                        <label for="login-remember">Remember me on this computer</label>
                     </div>
-                    <input type="hidden" name="action" value="ajax_contact">
-                    <input type="hidden" name="lang" value="en">
-                    <input type="submit" value="SEND QUESTION">
+                    <input type="submit" value="SIGN IN">
                     <div class="errors"></div>
                 </form>
 
-            </div>
-            <div class="col-sm-5 col-sm-offset-1">
-                <div class="dow-buttons">
-                    <a href="#" class="button">DOW GERMANY</a>
-                    <a href="#" class="button">DOW FRANCE</a>
-                </div>
+                <p><a href="user_forgot_password.html">Forgot your password?</a></p>
+
             </div>
         </div>
     </article>

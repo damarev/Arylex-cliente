@@ -1,5 +1,4 @@
 {% set title = 'Login' %}
-{% set navActive = 6 %}
 {% extends "layout.nunjucks" %}
 {% block content %}
 
@@ -39,10 +38,11 @@
                         <input type="checkbox" name="remember-me" id="login-remember">
                         <label for="login-remember">Remember me on this computer</label>
                     </div>
-                    <input type="hidden" name="language" value="en">
-                    <input type="submit" value="SUBMIT">
+                    <input type="submit" value="SIGN IN">
                     <div class="errors"></div>
                 </form>
+
+                <p><a href="user_forgot_password.html">Forgot your password?</a></p>
 
             </div>
         </div>
