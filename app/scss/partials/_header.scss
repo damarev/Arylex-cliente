@@ -74,7 +74,7 @@
 			&:first-child {
 				padding-left: 8px;
 			}
-			&.selected a {
+			&.current-menu-item a {
 				border-color: $color-arylex;
 				text-decoration: none;
 			}

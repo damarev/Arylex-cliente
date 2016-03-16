@@ -33,12 +33,12 @@
 
             <nav class="nav-main" role="navigation">
                 <ul>
-                    <li {{ 'class="selected"' | safe if navActive == 1 }}><a href="home.html">Arylex Active</a></li>
-                    <li {{ 'class="selected"' | safe if navActive == 2 }}><a href="dow.html">Dow AgroSciences</a></li>
-                    <li {{ 'class="selected"' | safe if navActive == 3 }}><a href="news.html">News &amp; Views</a></li>
-                    <li {{ 'class="selected"' | safe if navActive == 4 }}><a href="products.html">Products</a></li>
-                    <li {{ 'class="selected"' | safe if navActive == 5 }}><a href="faqs.html">FAQ</a></li>
-                    <li {{ 'class="selected"' | safe if navActive == 6 }}><a href="contact.html">Contact</a></li>
+                    <li {{ 'class="current-menu-item"' | safe if navActive == 1 }}><a href="home.html">Arylex Active</a></li>
+                    <li {{ 'class="current-menu-item"' | safe if navActive == 2 }}><a href="dow.html">Dow AgroSciences</a></li>
+                    <li {{ 'class="current-menu-item"' | safe if navActive == 3 }}><a href="news.html">News &amp; Views</a></li>
+                    <li {{ 'class="current-menu-item"' | safe if navActive == 4 }}><a href="products.html">Products</a></li>
+                    <li {{ 'class="current-menu-item"' | safe if navActive == 5 }}><a href="faqs.html">FAQ</a></li>
+                    <li {{ 'class="current-menu-item"' | safe if navActive == 6 }}><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
 
