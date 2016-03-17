@@ -101,7 +101,7 @@
                         <form class="bulletin-form" action="json/subscribe_success.json" method="POST" data-msg-success="Éxito!" data-msg-error="Error!" data-msg-error-email="Email ya suscrito!">
                             <input type="text" name="email" class="email-field" data-error="El email no es válido">
                             <input type="hidden" name="lang" value="en">
-                            <button type="submit" class="bulletin-submit">Subscribe</button>
+                            <input type="submit" class="bulletin-submit" value="Subscribe">
                             <div class="errors"></div>
                         </form>
                         <br>
