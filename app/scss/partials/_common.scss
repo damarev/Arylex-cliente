@@ -255,7 +255,7 @@ a:hover, a:focus {text-decoration: none; outline: none;}
 	@media (max-width: $screen-xs-max) {
 		height: 360px;
 		> .furrows {
-			top: 60px;
+			top: 30px;
 			width: 75%;
 		}
 		.container {
@@ -305,8 +305,13 @@ a:hover, a:focus {text-decoration: none; outline: none;}
 		}
 	}
 	@media (max-width: 480px) {
-		height: 280px;
+		height: 200px;
+		&.header-home {
+			height: 340px;
+		}
+
 		> .furrows {
+			top: 30px;
 			width: 75%;
 		}
 		.container {
