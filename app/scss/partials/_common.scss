@@ -198,7 +198,7 @@ a:hover, a:focus {text-decoration: none; outline: none;}
 			font-size: 45px;
 			padding-top: 50px;
 			margin: 0 0 15px 0;
-		    position: relative;
+			position: relative;
 		}
 	}
 	.highlight {
@@ -243,7 +243,7 @@ a:hover, a:focus {text-decoration: none; outline: none;}
 			top: 80px;
 		}
 		.highlight {
-		    bottom: 30px;
+			bottom: 30px;
 			h2 {
 				font-size: 32px;
 			}
@@ -283,7 +283,7 @@ a:hover, a:focus {text-decoration: none; outline: none;}
 		&.header-news {
 			> .furrows {
 				top: 30px;
-			    width: 45%;
+				width: 45%;
 			}
 			.title-top h2 {
 				font-size: 30px;
@@ -309,7 +309,10 @@ a:hover, a:focus {text-decoration: none; outline: none;}
 		&.header-home {
 			height: 340px;
 		}
-
+		.title-top h2 {
+			color: white;
+			padding-top: 85px;
+		}
 		> .furrows {
 			top: 30px;
 			width: 75%;
