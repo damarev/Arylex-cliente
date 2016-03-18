@@ -41,7 +41,7 @@ a:hover, a:focus {text-decoration: none; outline: none;}
 		color: #a69c95;
 		margin: 0 0 30px 0;
 	}
-	ul {
+	ul, ol {
 		margin: 0 0 30px 0;
 		padding-left: 50px;
 		line-height: 1.8;
@@ -83,6 +83,49 @@ a:hover, a:focus {text-decoration: none; outline: none;}
 	}
 }
 
+.search-results {
+	color: #6f625a;
+	a {
+	  @include clearfix;
+		display: block;
+		color: inherit;
+		transition: all 0.35s;
+		&:hover{
+			opacity: 0.7;
+		}
+	}
+	h3 {
+		font-size: 21px;
+		font-weight: 300;
+		margin-top: -5px;
+		margin-bottom: 2px;
+		color: #a69c95;
+	}
+	img {
+	}
+	.search-term {
+		font-size: 20px;
+		b {
+			color: $color-arylex;
+			font-weight: 400;
+			@media (min-width: $screen-lg-min){
+				display: block;
+				margin-top: 15px;
+			}
+		}
+	}
+}
+
+.icon-search-results {
+	background: url('../img/icon-search-results.png') no-repeat center center;
+	display: inline-block;
+	vertical-align: middle;
+	height: 29px;
+	width: 29px;
+	margin-right: 10px;
+	position: relative;
+	top: -2px;
+}
 
 .button {
 	text-align: center;

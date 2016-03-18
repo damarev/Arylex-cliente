@@ -46,7 +46,8 @@ gulp.task('serve', ['sass'], function() {
         server: "./app",
         online: false,
         directory: true,
-        open: true
+        open: true,
+        ghostMode: false
     });
 
     gulp.watch(['app/pages/**/*.+(html|nunjucks)','app/templates/**/*.+(html|nunjucks)'], ['nunjucks']);

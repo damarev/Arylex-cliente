@@ -1,0 +1,67 @@
+{% set title = 'Search results' %}
+{% extends "layout.nunjucks" %}
+{% block content %}
+
+
+<header class="header-img" style="background-image:url('img/header-8.jpg');">
+    <span class="furrows"></span>
+    <div class="highlight">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h2>Search</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<main id="main" role="main">
+
+    <article class="container search-results">
+        <div class="row">
+            <div class="col-md-4 search-term">
+                <p><i class="icon-search-results"></i> Search results for <b>"Crops"</b></p>
+            </div>
+            <div class="col-md-8 page-content">
+                <div class="row">
+                    <a href="news_detail.html">
+                        <div class="col-sm-3">
+                            <img src="img/news-2.jpg" class="img-responsive">
+                        </div>
+                        <div class="col-sm-9">
+                            <h3>Prevent volunteer beans making gappy crops</h3>
+                            <p>Across Europe. Having recently received its first commercial registration in Denmark we are looking forward to the announcement of more.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="news_detail_expert.html" >
+                        <div class="col-sm-3">
+                            <img src="img/news-2.jpg" class="img-responsive">
+                        </div>
+                        <div class="col-sm-9">
+                            <h3>Prevent volunteer beans making gappy crops</h3>
+                            <p>Across Europe. Having recently received its first commercial registration in Denmark we are looking forward to the announcement of more.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="news_detail_webinar.html" >
+                        <div class="col-sm-3">
+                            <img src="img/news-2.jpg" class="img-responsive">
+                        </div>
+                        <div class="col-sm-9">
+                            <h3>Prevent volunteer beans making gappy crops</h3>
+                            <p>Across Europe. Having recently received its first commercial registration in Denmark we are looking forward to the announcement of more.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+</main>
+
+{% endblock %}
