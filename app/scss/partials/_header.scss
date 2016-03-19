@@ -42,7 +42,7 @@
 			display: block;
 			float: right;
 			margin-right: 30px;
-			background: url('../img/icon-menu-open.png') no-repeat center center;
+			background: url('../svg/icon-menu-open.svg') no-repeat center center;
 			width: 30px;
 			height: 24px;
 			text-indent: -9999px;
@@ -118,9 +118,9 @@
 		color: #968c83;
 		> li {
 			padding: 0 10px;
-			&.global > a {background: url('../img/icon-globe.png') no-repeat right -1px;}
-			&.login > a {background: url('../img/icon-login.png') no-repeat right -1px;}
-			&.language > a {background: url('../img/icon-language.png') no-repeat right -1px;}
+			&.global > a {background: url('../svg/icon-globe.svg') no-repeat right -1px;}
+			&.login > a {background: url('../svg/icon-login.svg') no-repeat right -1px;}
+			&.language > a {background: url('../svg/icon-language.svg') no-repeat right -1px;}
 			&.language {
 				> ul {
   					@include list-unstyled;
@@ -223,7 +223,7 @@
 			}
 			.logo-top {
 				.menu-toggle {
-					background-image: url('../img/icon-menu-close.png');
+					background-image: url('../svg/icon-menu-close.svg');
 				}
 			}
 		}

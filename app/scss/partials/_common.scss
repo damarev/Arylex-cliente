@@ -20,7 +20,7 @@ a:hover, a:focus {text-decoration: none; outline: none;}
 		width: 22px;
 		height: 22px;
 		text-indent: -9999px;
-		background: url('../img/icon-menu-close.png') no-repeat center center;
+		background: url('../svg/icon-menu-close.svg') no-repeat center center;
 	}
 }
 
@@ -123,7 +123,7 @@ a:hover, a:focus {text-decoration: none; outline: none;}
 }
 
 .icon-search-results {
-	background: url('../img/icon-search-results.png') no-repeat center center;
+	background: url('../svg/icon-search-results.svg') no-repeat center center;
 	display: inline-block;
 	vertical-align: middle;
 	height: 29px;
@@ -206,7 +206,7 @@ a:hover, a:focus {text-decoration: none; outline: none;}
 		width: 100%;
 	}
 	.search-submit {
-		background: url('../img/icon-search.png') no-repeat center center;
+		background: url('../svg/icon-search.svg') no-repeat center center;
 		text-indent: -9999px;
 		border: none;
 		width: 20px;
@@ -239,7 +239,7 @@ a:hover, a:focus {text-decoration: none; outline: none;}
 		width: 100%;
 		height: 143px;
 		max-width: 541px;
-		background: url('../img/art-furrows.png') no-repeat top left;
+		background: url('../svg/art-furrows.svg') no-repeat top left;
 		background-size: contain;
 	}
 	.title-top {
@@ -279,7 +279,7 @@ a:hover, a:focus {text-decoration: none; outline: none;}
 				.icon-video {
 					border-color: white;
 					background-color: transparent;
-					background-image: url('../img/icon-video-white.png');
+					background-image: url('../svg/icon-video-white.svg');
 				}
 			}
 		}
@@ -290,6 +290,7 @@ a:hover, a:focus {text-decoration: none; outline: none;}
 			width: 80px;
 			height: 80px;
 			margin-bottom: 15px;
+			transition: all 0.1s ease-out;
 		}
 	}
 	@media (max-width: $screen-md-max) {
@@ -396,9 +397,8 @@ a:hover, a:focus {text-decoration: none; outline: none;}
 		display: inline-block;
 		color: #968c83;
 		&:hover {
-			color: $color-arylex;
 			.icon-video {
-				background-image: url('../img/icon-video-white.png');
+				background-image: url('../svg/icon-video-white.svg');
 				background-color: #52bebe;
 			}
 		}
@@ -412,6 +412,7 @@ a:hover, a:focus {text-decoration: none; outline: none;}
 		border-radius: 99px;
 		cursor: pointer;
 		margin-bottom: 10px;
+		transition: all 0.1s ease-out;
 	}
 	@media (max-width: $screen-xs-max) {
 		//background
@@ -434,7 +435,7 @@ a:hover, a:focus {text-decoration: none; outline: none;}
 	height: 33px;
 	border-radius: 99px;
 	display: inline-block;
-	background: white url('../img/icon-video.png') no-repeat center center;
+	background: white url('../svg/icon-video.svg') no-repeat center center;
 }
 
 .jumbotron-products {
@@ -505,10 +506,10 @@ a:hover, a:focus {text-decoration: none; outline: none;}
 		color: #a69c95;
 		padding-left: 30px;
 		margin: 0 0 30px 0;
-		background: url('../img/icon-arrow-faq-closed.png') no-repeat 8px 4px;
+		background: url('../svg/icon-arrow-faq-closed.svg') no-repeat 8px 4px;
 		cursor: pointer;
 		&.open {
-			background: url('../img/icon-arrow-faq-open.png') no-repeat left 10px;
+			background: url('../svg/icon-arrow-faq-open.svg') no-repeat left 10px;
 		}
 	}
 	> div {
@@ -521,6 +522,7 @@ a:hover, a:focus {text-decoration: none; outline: none;}
 		}
 	}
 }
+
 
 .mod-register {
 	padding: 0 28px;

@@ -16,7 +16,7 @@
 				}
 				&.selected a {
 					color: $color-arylex;
-					background: url('../img/icon-arrow.png') no-repeat right center;
+					background: url('../svg/icon-arrow.svg') no-repeat right center;
 				}
 			}
 		}
@@ -43,7 +43,7 @@
 		}
 		.content {
 			padding-top: 40px;
-			background: url('../img/icon-arrow-down.png') no-repeat 5px 0;
+			background: url('../svg/icon-arrow-down.svg') no-repeat 5px 0;
 			h3 {
 				display: block;
 				margin-top: 0;

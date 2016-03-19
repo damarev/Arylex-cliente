@@ -213,7 +213,7 @@
 		.meta-category {
 			padding-top: 37px;
 			text-align: center;
-			background: url('../img/art-separator.png') no-repeat top center;
+			background: url('../svg/art-separator.svg') no-repeat top center;
 			font-size: 11px;
 			color: #b5ada6;
 			margin: 60px 0 35px 0;
@@ -240,15 +240,15 @@
 				height: 20px;
 				text-indent: -9999px;
 				background-repeat: no-repeat;
-				background-image: url('../img/sprite-share-post.png');
+				background-position: center center;
 				transition: all 0.15s ease-out;
 				&:hover {
 					opacity: 0.8;
 				}
 			}
-			.share-twitter {background-position: 0 0;}
-			.share-facebook {background-position: -34px 0;}
-			.share-email {background-position: -71px 0;}
+			.share-facebook {background-image: url('../svg/share-post_fb.svg');}
+			.share-twitter {background-image: url('../svg/share-post_twitter.svg');}
+			.share-email {background-image: url('../svg/share-post_mailto.svg');}
 		}
 	}
 
