@@ -1,12 +1,13 @@
 #main.news {
 	margin-top: -190px;
+	padding-top: 0;
 	.container {
 		padding-top: 10px;
 		position: relative;
 		background-color: white;
 	}
 	@media (max-width: $screen-md-max) {
-		margin-top: -140px;
+		margin-top: -190px;
 	}
 	@media (max-width: $screen-xs-max) {
 		margin-top: -140px;
@@ -15,7 +16,7 @@
 		}
 	}
 	@media (max-width: 480px) {
-		margin-top: -60px;
+		margin-top: -40px;
 	}
 }
 
@@ -69,6 +70,34 @@
 			height: 180px;
 			.content {padding:20px 20px;}
 			h3 {font-size: 20px; margin-top: 15px;}
+		}
+	}
+
+	.news-category {
+		padding: 70px 20px 0 20px;
+		height: 180px;
+		color: white;
+		background-color: #d7d2cb;
+		margin-bottom: 35px;
+		p {
+			font-size: 26px;
+			margin: 0 0 0 0;
+		}
+		h2 {
+			font-size: 40px;
+			color: white;
+			margin: 0;
+			line-height: 1.1;
+		}
+		@media (max-width: $screen-xs-max) {
+			height: auto;
+			padding: 20px;
+			p {
+				font-size: 20px;
+			}
+			h2 {
+				font-size: 30px;
+			}
 		}
 	}
 
