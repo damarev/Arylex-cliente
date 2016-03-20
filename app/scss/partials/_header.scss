@@ -70,9 +70,9 @@
 		font-size: 13px;
 		margin: 0;
 		li {
-			padding: 0 16px;
+			padding-right: 32px;
 			&:first-child {
-				padding-left: 8px;
+				padding-left: 0;
 			}
 			&.current-menu-item a {
 				border-color: $color-arylex;
@@ -127,7 +127,7 @@
   					position: absolute;
   					right: 10px;
 					padding: 0 5px;
-					text-align: left;
+  					text-align: right;
 					background-color: white;
 					border: 1px solid #ebe8e5;
 					> li {
