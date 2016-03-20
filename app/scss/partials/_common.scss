@@ -49,10 +49,10 @@ a:hover, a:focus {text-decoration: none; outline: none;}
 	img {
 		margin-bottom: 30px;
 	}
-	img.pull-right {
+	div.pull-right > img , img.pull-right {
 		margin-left: 50px;
 	}
-	img.pull-left {
+	div.pull-left > img , img.pull-left {
 		margin-right: 50px;
 	}
 	.img-caption {
@@ -190,7 +190,16 @@ a:hover, a:focus {text-decoration: none; outline: none;}
 	}
 
 }
-
+#main.home {
+	article.container {
+		> .row:nth-child(2){
+			margin-top: 50px;
+			> div:nth-child(2){
+				img {margin-top: 90px;}
+			}
+		}
+	}
+}
 
 .search-form {
 	line-height: 32px;
@@ -245,7 +254,7 @@ a:hover, a:focus {text-decoration: none; outline: none;}
 	.title-top {
 		text-align: center;
 		h2 {
-			font-size: 45px;
+			font-size: 35px;
 			padding-top: 50px;
 			margin: 0 0 15px 0;
 			position: relative;
@@ -564,7 +573,7 @@ a:hover, a:focus {text-decoration: none; outline: none;}
 	h3 {
 		font-size: 18px;
 		font-weight: 500;
-		margin: 20px 22px;
+		margin: 0 22px 20px 22px;
 	}
 	ul {
 		@extend .list-unstyled;
@@ -581,6 +590,11 @@ a:hover, a:focus {text-decoration: none; outline: none;}
 					text-decoration: none;
 				}
 			}
+		}
+	}
+	@media (max-width: $screen-md-max) {
+		h3 {
+			margin: 20px 22px;
 		}
 	}
 }
