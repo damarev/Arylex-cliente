@@ -113,6 +113,10 @@
 			width: 170px;
 			background: url('../svg/logo-solutions.svg') no-repeat center;
 		}
+		> span:last-child {
+			margin-top: 15px;
+			display: block;
+		}
 	}
 
 
@@ -120,9 +124,6 @@
 		.copyright {
 			.logo-footer {
 				margin-bottom: 15px;
-			}
-			> span:last-child {
-				display: block;
 			}
 		}
 	}
