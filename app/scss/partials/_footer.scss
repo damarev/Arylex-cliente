@@ -47,6 +47,8 @@
 			background-color: #f5f4f2;
 			padding-left: 15px;
 			padding-right: 120px;
+			border-radius: 0;
+			-webkit-appearance: none;
 		}
 		.bulletin-submit {
 			@extend .button;
@@ -60,6 +62,8 @@
 			position: absolute;
 			top: 5px;
 			right: 5px;
+			border-radius: 0;
+			-webkit-appearance: none;
 		}
 		.errors {
 
@@ -93,7 +97,7 @@
 
 	.copyright {
 		font-size: 9px;
-		padding: 40px 0 20px;
+		padding: 50px 0 20px;
 		.logo-footer {
 			width: 170px;
 			height: 25px;

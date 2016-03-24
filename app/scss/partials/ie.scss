@@ -1,0 +1,18 @@
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.search-form .search-field {
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+	.footer .bulletin-form .email-field {
+		padding-top: 14px;
+		padding-bottom: 14px;
+	}
+
+	.form-type {
+		input[type="text"], input[type="email"], input[type="password"] {
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+	}
+
+}
