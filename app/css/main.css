@@ -4056,9 +4056,9 @@ a:hover, a:focus {
       padding-left: 20px;
       padding-right: 20px; } }
 
-#main.home article.container > .row:nth-child(2), #main.home article.key-benefits > .row:nth-child(2), #main.home .news article.news-featured > .row:nth-child(2), .news #main.home article.news-featured > .row:nth-child(2), #main.home .news article.news-list > .row:nth-child(2), .news #main.home article.news-list > .row:nth-child(2), #main.home .news article.news-detail > .row:nth-child(2), .news #main.home article.news-detail > .row:nth-child(2) {
+#main.home > article.container:nth-child(1) > .row:nth-child(2), #main.home > article.key-benefits:nth-child(1) > .row:nth-child(2), .news #main.home > article.news-featured:nth-child(1) > .row:nth-child(2), .news #main.home > article.news-list:nth-child(1) > .row:nth-child(2), .news #main.home > article.news-detail:nth-child(1) > .row:nth-child(2) {
   margin-top: 50px; }
-  #main.home article.container > .row:nth-child(2) > div:nth-child(2) img, #main.home article.key-benefits > .row:nth-child(2) > div:nth-child(2) img, #main.home .news article.news-featured > .row:nth-child(2) > div:nth-child(2) img, .news #main.home article.news-featured > .row:nth-child(2) > div:nth-child(2) img, #main.home .news article.news-list > .row:nth-child(2) > div:nth-child(2) img, .news #main.home article.news-list > .row:nth-child(2) > div:nth-child(2) img, #main.home .news article.news-detail > .row:nth-child(2) > div:nth-child(2) img, .news #main.home article.news-detail > .row:nth-child(2) > div:nth-child(2) img {
+  #main.home > article.container:nth-child(1) > .row:nth-child(2) > div:nth-child(2) img, #main.home > article.key-benefits:nth-child(1) > .row:nth-child(2) > div:nth-child(2) img, .news #main.home > article.news-featured:nth-child(1) > .row:nth-child(2) > div:nth-child(2) img, .news #main.home > article.news-list:nth-child(1) > .row:nth-child(2) > div:nth-child(2) img, .news #main.home > article.news-detail:nth-child(1) > .row:nth-child(2) > div:nth-child(2) img {
     margin-top: 90px; }
 
 .search-form {
@@ -4203,16 +4203,13 @@ a:hover, a:focus {
         padding-left: 20px;
         padding-right: 20px; }
       .header-img .highlight {
-        bottom: 30px; }
-        .header-img .highlight h2 {
-          margin: 0; }
-        .header-img .highlight p {
-          display: none; } }
+        bottom: 30px; } }
 
 .video-arylex-attributes {
   text-align: center;
   font-size: 14px;
-  font-weight: 300; }
+  font-weight: 300;
+  margin-top: 15px; }
   .video-arylex-attributes a {
     display: inline-block;
     color: #968c83; }

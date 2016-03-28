@@ -191,7 +191,7 @@ a:hover, a:focus {text-decoration: none; outline: none;}
 
 }
 #main.home {
-	article.container {
+	> article.container:nth-child(1) {
 		> .row:nth-child(2){
 			margin-top: 50px;
 			> div:nth-child(2){
@@ -387,12 +387,6 @@ a:hover, a:focus {text-decoration: none; outline: none;}
 		}
 		.highlight {
 			bottom: 30px;
-			h2 {
-				margin: 0;
-			}
-			p {
-				display: none;
-			}
 		}
 	}
 }
@@ -402,6 +396,7 @@ a:hover, a:focus {text-decoration: none; outline: none;}
 	text-align: center;
 	font-size: 14px;
 	font-weight: 300;
+	margin-top: 15px;
 	a {
 		display: inline-block;
 		color: #968c83;
