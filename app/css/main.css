@@ -4072,14 +4072,15 @@ a:hover, a:focus {
     border: 1px solid #d7d2cb;
     border-radius: 50px;
     padding: 0 44px 0 20px;
-    width: 100%; }
+    width: 100%;
+    line-height: 40px; }
   .search-form .search-submit {
     background: url("../svg/icon-search.svg") no-repeat center center;
     text-indent: -9999px;
     border: none;
     width: 20px;
     position: absolute;
-    top: -1px;
+    top: 2px;
     right: 15px; }
   @media (max-width: 767px) {
     .search-form {
@@ -4670,7 +4671,9 @@ a:hover, a:focus {
         width: 100%;
         max-width: 338px; }
       .footer .bulletin-form {
-        margin-bottom: 20px; } }
+        margin-bottom: 20px; }
+        .footer .bulletin-form .email-field {
+          font-size: 15px; } }
   @media (max-width: 480px) {
     .footer > .container, .footer > .key-benefits, .news .footer > .news-featured, .news .footer > .news-list, .news .footer > .news-detail {
       padding-left: 20px;
@@ -5057,13 +5060,10 @@ a:hover, a:focus {
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .search-form .search-field {
-    padding-top: 8px;
-    padding-bottom: 8px; }
+    height: 40px; }
   .footer .bulletin-form .email-field {
-    padding-top: 14px;
-    padding-bottom: 14px; }
+    height: 40px; }
   .form-type input[type="text"], .form-type input[type="email"], .form-type input[type="password"] {
-    padding-top: 10px;
-    padding-bottom: 10px; } }
+    height: 40px; } }
 
 /*# sourceMappingURL=main.css.map */
