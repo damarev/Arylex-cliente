@@ -4068,7 +4068,7 @@ a:hover, a:focus {
   position: relative; }
   .search-form .search-field {
     color: #968c83;
-    font-size: 12px;
+    font-size: 13px;
     border: 1px solid #d7d2cb;
     border-radius: 50px;
     padding: 0 44px 0 20px;
@@ -4587,7 +4587,7 @@ a:hover, a:focus {
     .footer .bulletin-form .email-field {
       border: none;
       color: #968c83;
-      font-size: 11px;
+      font-size: 13px;
       width: 100%;
       background-color: #f5f4f2;
       padding-left: 15px;
