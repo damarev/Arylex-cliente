@@ -221,17 +221,15 @@ a:hover, a:focus {text-decoration: none; outline: none;}
 		border: none;
 		width: 20px;
 		position: absolute;
-		top: 2px;
+		top: 0;
 		right: 15px;
+		line-height: 40px;
 	}
 	@media (max-width: $screen-xs-max) {
 		line-height: 38px;
 		.search-field {
 			font-size: 15px;
 			border: none;
-		}
-		.search-submit {
-			top: -1px;
 		}
 	}
 }

@@ -1,6 +1,9 @@
 
 $(function () {
 
+    $('html').toggleClass('is-ios', /(iphone|ipod|ipad)/.test(navigator.userAgent.toLowerCase()));
+
+
     //Header fixed (escritorio)
     var pixelsFromTheTop = 45;
     $(window).bind('scroll',function () {

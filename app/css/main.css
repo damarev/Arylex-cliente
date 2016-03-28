@@ -4080,16 +4080,15 @@ a:hover, a:focus {
     border: none;
     width: 20px;
     position: absolute;
-    top: 2px;
-    right: 15px; }
+    top: 0;
+    right: 15px;
+    line-height: 40px; }
   @media (max-width: 767px) {
     .search-form {
       line-height: 38px; }
       .search-form .search-field {
         font-size: 15px;
-        border: none; }
-      .search-form .search-submit {
-        top: -1px; } }
+        border: none; } }
 
 .header-img {
   position: relative;
@@ -5060,10 +5059,14 @@ a:hover, a:focus {
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .search-form .search-field {
-    height: 40px; }
+    height: 40px;
+    line-height: normal; }
   .footer .bulletin-form .email-field {
     height: 40px; }
   .form-type input[type="text"], .form-type input[type="email"], .form-type input[type="password"] {
     height: 40px; } }
+
+html.is-ios .bulletin-form .bulletin-submit {
+  height: 30px; }
 
 /*# sourceMappingURL=main.css.map */
