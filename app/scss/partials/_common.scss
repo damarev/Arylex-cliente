@@ -190,6 +190,7 @@ a:hover, a:focus {text-decoration: none; outline: none;}
 	}
 
 }
+
 #main.home {
 	> article.container:nth-child(1) {
 		> .row:nth-child(2){
@@ -368,7 +369,7 @@ a:hover, a:focus {text-decoration: none; outline: none;}
 		}
 	}
 	@media (max-width: 480px) {
-		height: 200px;
+		height: 270px;
 		&.header-home {
 			height: 340px;
 		}
