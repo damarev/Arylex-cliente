@@ -1,0 +1,38 @@
+{% set title = 'Products' %}
+{% set navActive = 4 %}
+{% extends "layout.nunjucks" %}
+{% block content %}
+
+
+<header class="header-img" style="background-image:url('img/header-4.jpg');">
+    <span class="furrows"></span>
+    <div class="highlight">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h2>Products</h2>
+                    <p>All details of new Arylex products will be found here.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<main id="main" role="main">
+
+    <article class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <p>Arylex is currently undergoing trial as an active ingredient in a number of herbicides across Europe. Having recently received its first commercial registration in Denmark we are looking forward to the announcement of more Arylex based products in the coming months.</p>
+                <p><img src="./svg/logo-grey.svg" class="img-responsive" alt="Arylex Active"></p>
+            </div>
+            <div class="col-md-6 col-md-offset-1">
+                <img src="./img/graphic-products-1.jpg" class="img-responsive center-block">
+            </div>
+        </div>
+    </article>
+
+</main>
+
+{% endblock %}

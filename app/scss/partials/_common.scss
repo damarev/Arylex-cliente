@@ -46,6 +46,9 @@ a:hover, a:focus {text-decoration: none; outline: none;}
 		padding-left: 50px;
 		line-height: 1.8;
 	}
+	ul li, ol li {
+		margin: 0 0 20px 0;
+	}
 	img {
 		margin-bottom: 30px;
 	}
@@ -369,7 +372,7 @@ a:hover, a:focus {text-decoration: none; outline: none;}
 		}
 	}
 	@media (max-width: 480px) {
-		height: 270px;
+		height: 290px;
 		&.header-home {
 			height: 340px;
 		}
