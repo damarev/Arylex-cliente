@@ -85,7 +85,7 @@
 				transition: all 0.15s ease-out;
 				background-color: rgba(255, 255, 255, 0.6);
 				background-position: center;
-				background-repeat: none;
+				background-repeat: no-repeat;
 				&.facebook {background-image: url('../svg/icon-facebook.svg');}
 				&.twitter {background-image: url('../svg/icon-twitter.svg');}
 				&.linkedin {background-image: url('../svg/icon-linkedin.svg');}
