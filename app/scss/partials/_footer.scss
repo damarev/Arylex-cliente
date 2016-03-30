@@ -30,7 +30,7 @@
 	.search-form {
 		float: right;
 		.search-field {
-			border: none;
+			border-color: #f5f4f2;
 			background-color: #f5f4f2;
 		}
 	}
@@ -49,10 +49,13 @@
 			padding-right: 120px;
 			border-radius: 0;
 			-webkit-appearance: none;
+			height: 40px;
+			line-height: 40px;
 		}
 		.bulletin-submit {
 			@extend .button;
 			margin: 0;
+			padding: 0;
 			line-height: 24px;
 			font-size: 10px;
 			background-color: transparent;
@@ -62,6 +65,7 @@
 			position: absolute;
 			top: 5px;
 			right: 5px;
+			height: 30px;
 			border-radius: 0;
 			-webkit-appearance: none;
 		}
