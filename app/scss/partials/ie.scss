@@ -11,4 +11,9 @@
 			height: 40px;
 		}
 	}
+	@media (max-width: $screen-xs-max) {
+		.logo-top h1 a {
+			height: 23px;
+		}
+	}
 }
